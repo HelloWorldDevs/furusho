@@ -1,7 +1,14 @@
 <nav>
-    <ul class="nav nav-justified">
-        {% for item in site.pages %}
-        {% if item.link.text and item.link.text != "Home" %}<li><a href="{{ item.link.url }}">{{ item.link.text }}</a></li>{% endif %}
+    <ul class="nav nav-pills nav-justified">
+        <li><a href="index.html#">New Patient Specials</a></li>
+        <li><a href="index.html#">Patient Reviews</a></li>
+        {% assign sorted = site.pages | sort:"weight" %}
+        {% for item in sorted %}
+            {% if item.link.text and item.link.text != "Home" %}
+                <li {% if page.title==item.title %} class="active" {% endif %}>
+                    <a href="{{ item.link.url }}">{{ item.link.text }}</a>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </nav>
