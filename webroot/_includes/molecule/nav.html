@@ -1,0 +1,7 @@
+<nav>
+    <ul class="nav nav-justified">
+        {% for item in site.pages %}
+        {% if item.link.text and item.link.text != "Home" %}<li><a href="{{ item.link.url }}">{{ item.link.text }}</a></li>{% endif %}
+        {% endfor %}
+    </ul>
+</nav>
