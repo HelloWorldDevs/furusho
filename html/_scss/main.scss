@@ -106,3 +106,21 @@ label {
     font-size: 30px;
   }
 }
+
+// Associations Slider
+.associations {
+  img {
+    width:auto;
+  }
+  .slick-slide.slide {
+    padding: 0 20px;
+    display: flex;
+    width: 100%;
+    img {
+      display: inline;
+    }
+  }
+  .image-pad {
+    flex-grow: 1;
+  }
+}
