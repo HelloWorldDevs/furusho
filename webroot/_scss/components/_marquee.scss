@@ -1,11 +1,9 @@
 .marquee {
+  height: 550px;
   color: $accent-font-first;
-  &__slide {
-    top: 0px;
-    bottom: 0px;
     background-position: center center;
     background-size: cover;
-
+  &__slide {
   }
   &__slide-wrapper {
     height: 550px;
