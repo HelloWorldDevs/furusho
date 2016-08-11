@@ -1,21 +1,19 @@
 <section class="contact{% if include.additional %} contact--has-additional{% endif %}">
     <div class="contact__content container clearfix">
 
-        <div class="contact__main">
-            <div class="row">
-                <div class="col-md-6">
-                    <div>
-                        <h5 class="contact__title">New Patient Hotline</h5>
-                        <h3 class="contact__phone">{{ site.data.content.contact.phone-new }}</h3>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a href="#" class="contact__btn btn btn-default btn-lg" data-target="#" data-toggle="modal">Request Appointment</a>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">{{ site.data.content.contact.phone-new }}</h3>
                 </div>
             </div>
-            <h6>Existing patient of our practice call: {{ site.data.content.contact.phone-existing }}</h6>
+            <div class="col-md-6">
+                <a href="#" class="contact__btn btn btn-default btn-lg" data-target="#" data-toggle="modal">Request Appointment</a>
+            </div>
         </div>
 
+        <h6>Existing patient of our practice call: {{ site.data.content.contact.phone-existing }}</h6>
 
         {% if include.additional %}
 
@@ -27,5 +25,6 @@
             </div>
 
         {% endif %}
+
     </div>
 </section>

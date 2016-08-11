@@ -1,11 +1,13 @@
-<section class="header-container">
-    <header class="wrapper clearfix">
+<section class="header">
+    <header class="header__content wrapper clearfix">
 
-        <div class="row">
-            <div class="header-logo pull-left">
+        <div class="col-md-9">
+            <div class="header__logo">
                 <img src="images/furusho-masthead-logo.png" alt="">
             </div>
-            <div class="header-info pull-right">
+        </div>
+        <div class="col-md-3">
+            <div class="header__info">
                 <h4>Just off Edens Expressway (Hwy 94)</h4>
                 <h5>New Patients: {{ site.data.content.contact.phone-new }}</h5>
                 <h6>Existing Patients: {{ site.data.content.contact.phone-existing }}</h6>

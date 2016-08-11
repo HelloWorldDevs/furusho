@@ -1,0 +1,12 @@
+.header {
+  border: solid 1px $c-gray;
+}
+
+.nav {
+  li {
+    background-color: $background-dark;
+  }
+  &__link {
+    color: $accent-font-first;
+  }
+}

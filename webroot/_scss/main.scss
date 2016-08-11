@@ -1,3 +1,9 @@
 @import "base/_colors.scss";
-@import "global/_site-header.scss";
 @import "components/_contact.scss";
+@import "components/_header.scss";
+@import "components/_btn.scss";
+
+
+body {
+  padding: 15px;
+}
