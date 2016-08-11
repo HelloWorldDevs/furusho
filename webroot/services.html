@@ -6,36 +6,51 @@ link:
     url: services.html
 weight: 3
 ---
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
 <div class="main-container">
-    <div class="main wrapper clearfix">
 
-        <article>
-            <header>
-                <h1>article header h1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-            </header>
-            <section>
-                <h2>article section h2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-            </section>
-            <section>
-                <h2>article section h2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-            </section>
-            <footer>
-                <h3>article footer h3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-            </footer>
-        </article>
+    {% include organisms/contact.html %}
 
-        <aside>
-            <h3>aside</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-        </aside>
+    <section class="services">
+        <div class="services__content clearfix">
+            <div class="heading services__heading">
+                <h2>Pediatric Services</h2>
+            </div>
 
-    </div> <!-- #main -->
-</div> <!-- #main-container -->
+            <div class="row">
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title1</h6>
+                </div>
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title2</h6>
+                </div>
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title3</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title1</h6>
+                </div>
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title2</h6>
+                </div>
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title3</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title1</h6>
+                </div>
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title2</h6>
+                </div>
+                <div class="col-sm-4 services__tile"><img src="" alt="">
+                    <h6>title3</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include organisms/contact.html additional=true %}
+</div>
