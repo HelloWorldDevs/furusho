@@ -6,36 +6,59 @@ link:
     url: contact.html
 weight: 5
 ---
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
 <div class="main-container">
-    <div class="main wrapper clearfix">
+    <section class="location">
+        <div class="location__wrapper container clearfix">
+            <div class="heading location__heading">
+                <h2>Our Location</h2>
+            </div>
+            
+            <div class="row location__content">
+                <div class="col-md-4 col-sm-6">
+                    <img src="" alt="">
+                    <h6>4801 West Peterson, Suite 410 </h6>
+                    <h6>Chicago, IL 60646</h6>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h5>New Patient Hotline</h5>
+                    <h3>{{ site.data.content.contact.phone-new }}</h3>
+                    <h5>Existing Patient Hotline</h5>
+                    <h3>{{ site.data.content.contact.phone-existing }}</h3>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <article>
-            <header>
-                <h1>article header h1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-            </header>
-            <section>
-                <h2>article section h2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-            </section>
-            <section>
-                <h2>article section h2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-            </section>
-            <footer>
-                <h3>article footer h3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-            </footer>
-        </article>
+    <section class="contact-form">
+        <div class="contact-form__wrapper container clearfix">
 
-        <aside>
-            <h3>aside</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-        </aside>
+            <div class="heading contact-form__heading">
+                <h2>Contact Us</h2>
+            </div>
 
-    </div> <!-- #main -->
-</div> <!-- #main-container -->
+            <div class="contact-form__content">
+                <form action="" class="contact-form__form">
+                    <p>Yes! Please contact me to schedule an appointment or answer any questions I might still have:</p>
+                    <label for="name">My name:</label>
+                    <input type="text" name="name" id="name" class="contact_form__input"/>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" class="contact_form__input"/>
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" id="phone" class="contact_form__input"/>
+                    <a href="#" class="btn">Request Appointment</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="hipaa">
+        <div class="hipaa__wrapper container clearfix">
+            <p>This form, <strong>Notice of Privacy Practices</strong>, presents the information that federal law requires us to give our
+                patients regarding our privacy practices.</p>
+            <a href="http://www.dentistry4kids.net/new-patient">HIPAA Notice</a>
+        </div>
+    </section>
+</div>
