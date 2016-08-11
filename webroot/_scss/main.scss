@@ -73,3 +73,12 @@ p {
 label {
   font-weight: 400;
 }
+
+//Font Awesome Custom
+
+.fa-star {
+  &--custom {
+    color: #FFD700;
+    font-size: 30px;
+  }
+}
