@@ -15,4 +15,20 @@
 
     }
   }
+  &--pull-left,
+  &--pull-right {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    &--pull-left {
+      text-align: left;
+      padding-top: 20px;
+    }
+    &--pull-right {
+      text-align: right;
+    }
+  }
 }
