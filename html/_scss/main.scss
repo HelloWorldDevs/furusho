@@ -1,0 +1,94 @@
+@import "base/_colors.scss";
+@import "globals/_fonts.scss";
+@import "components/_contact.scss";
+@import "components/_specials.scss";
+@import "components/_services.scss";
+@import "components/_footer.scss";
+@import "components/_marquee.scss";
+@import "components/_header.scss";
+@import "components/_btn.scss";
+@import "vendor/_slick-theme.scss";
+
+body {
+  padding: 15px;
+}
+
+.heading {
+  text-align: center;
+  color: $accent-font-second;
+  padding: 20px 0px;
+  line-height: 64px;
+  font-size: 60px;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-margins {
+  margin: 15px 0px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+}
+
+.font-accent-purple {
+  color: $accent-font-second;
+}
+
+.background-light-purple {
+  background-color: $background-second;
+}
+
+.background-light-green {
+  background: $background-third;
+}
+
+//Bootstrap Overrides
+
+.btn {
+  border: 2px solid #FFFFFF;
+  font-size: 20px;
+  letter-spacing: -0.33px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  margin: 30px;
+  border-radius: 0px;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+}
+
+label {
+  font-weight: 400;
+}
+
+//Slick Overrides
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+//Font Awesome Custom
+
+.fa-star {
+  &--custom {
+    color: #FFD700;
+    font-size: 30px;
+  }
+}

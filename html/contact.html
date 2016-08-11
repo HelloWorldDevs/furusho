@@ -1,0 +1,77 @@
+---
+title: Contact
+layout: default
+link:
+    text: Contact
+    url: contact.html
+weight: 5
+---
+<div class="main-container container">
+
+    <section class="marquee" style="background-image: url('images/services-masthead.jpg');">
+        <div class="marquee__wrapper">
+
+        </div>
+    </section>
+
+    <section class="location section-margins">
+        <div class="location__wrapper container clearfix">
+            <div class="heading location__heading">
+                <h2>Our Location</h2>
+            </div>
+            
+            <div class="row location__content">
+                <div class="col-md-4 col-sm-6 center">
+                    <img src="images/horizontal-logo.png" alt="Denistry for Kids Logo">
+                    <h6>4801 West Peterson, Suite 410 </h6>
+                    <h6>Chicago, IL 60646</h6>
+                </div>
+                <div class="col-md-4 col-sm-6 center">
+                    <h5>New Patient Hotline</h5>
+                    <h3 class="font-accent-purple">{{ site.data.content.contact.phone-new }}</h3>
+                    <h5>Existing Patient Hotline</h5>
+                    <h4 class="font-accent-purple">{{ site.data.content.contact.phone-existing }}</h4>
+                </div>
+                <div class="col-md-4 col-sm-12 center">
+                    <img src="images/furusho-map.jpg" alt="map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form section-margins background-light-green">
+        <div class="contact-form__wrapper container clearfix">
+
+            <div class="heading contact-form__heading">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="contact-form__content col-md-10 col-md-offset-1">
+                <form action="" class="contact-form__form center">
+                    <p>Yes! Please contact me to schedule an appointment or answer any questions I might still have:</p>
+                    <div class="contact_form__row">
+                        <label for="name">My name:</label>
+                        <input type="text" name="name" id="name" class="contact_form__input"/>
+                    </div>
+                    <div class="contact_form__row">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" class="contact_form__input"/>
+                    </div>
+                    <div class="contact_form__row">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" name="phone" id="phone" class="contact_form__input"/>
+                    </div>
+                    <a href="#" class="btn">Request Appointment</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="hipaa background-light-purple section-margins">
+        <div class="hipaa__wrapper container clearfix center">
+            <p>This form, <strong>Notice of Privacy Practices</strong>, presents the information that federal law requires us to give our
+                patients regarding our privacy practices.</p>
+            <a href="#">HIPAA Notice</a>
+        </div>
+    </section>
+</div>

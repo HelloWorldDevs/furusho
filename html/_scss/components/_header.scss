@@ -1,0 +1,39 @@
+.header {
+  &__info {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header__info {
+    text-align: right;
+  }
+}
+
+.nav {
+  li {
+    background-color: $background-dark;
+  }
+  &__link {
+    color: $accent-font-first;
+  }
+}
+
+//Bootstrap Overrides
+.nav-pills>li>a {
+  border-radius: 0px;
+  height: auto;
+}
+
+.nav-pills>li:hover {
+  background-color: #512A65;
+}
+
+.nav-pills>li>a:hover {
+  background-color: #512A65;
+  color: $accent-font-first ;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .nav-pills>li.active {
+  background-color: #512A65;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fushuro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "compile:css": "node-sass --output-style=expanded --source-map-embed _scss/main.scss _site/css/main.css",
+    "watch:css": "node-sass --watch --output-style=expanded --source-map-embed _scss/main.scss _site/css/main.css",
+    "compile:jekyll": "bundle exec jekyll build",
+    "watch:jekyll": "bundle exec jekyll build --watch --incremental",
+    "serve": "browser-sync start --server '_site' --files=_site/**/*.html,_site/css/*.css",
+    "compile": "npm run compile:jekyll && npm run compile:css",
+    "clean": "rm -rf _site",
+    "start": "npm run compile && npm run watch",
+    "watch": "npm run watch:jekyll & npm run watch:css & npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HelloWorldDevs/furusho.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelloWorldDevs/furusho/issues"
+  },
+  "homepage": "https://github.com/HelloWorldDevs/furusho#readme",
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "node-sass": "^3.8.0"
+  }
+}

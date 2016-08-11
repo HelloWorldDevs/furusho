@@ -1,0 +1,30 @@
+<section class="contact{% if include.additional %} contact--has-additional{% endif %} section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">{{ site.data.content.contact.phone-new }}</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" class="contact__btn btn btn-default btn-lg" data-target="#" data-toggle="modal">Request Appointment</a>
+            </div>
+        </div>
+
+        <h6 class="center">Existing patient of our practice call: {{ site.data.content.contact.phone-existing }}</h6>
+        {% if include.additional %}
+        <hr>
+
+            <div class="contact__additional">
+                <div class="center">
+                    <h6 class="contact__address contact__address--line1">{{ site.data.content.contact.address.line1 }}</h6>
+                    <h6 class="contact__address contact__address--line2">{{ site.data.content.contact.address.line2 }}</h6>
+                </div>
+            </div>
+
+        {% endif %}
+
+    </div>
+</section>
