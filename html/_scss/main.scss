@@ -9,10 +9,6 @@
 @import "components/_btn.scss";
 @import "vendor/_slick-theme.scss";
 
-body {
-  padding: 15px;
-}
-
 .heading {
   text-align: center;
   color: $accent-font-second;
@@ -37,8 +33,9 @@ img {
   padding: 20px;
 }
 
-.font-accent-purple {
-  color: $accent-font-second;
+
+.font-accent-green {
+  color: #7ED321;
 }
 
 .background-light-purple {
@@ -66,7 +63,15 @@ h2 {
   font-weight: 400;
 }
 
+h6 {
+  font-size: 16px;
+}
+
 p {
+  font-size: 16px;
+}
+
+nav a {
   font-size: 16px;
 }
 

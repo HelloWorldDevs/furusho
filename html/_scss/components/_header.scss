@@ -2,12 +2,26 @@
   &__info {
     text-align: center;
   }
+  &__info--bold {
+    font-size: 120%;
+    font-weight: 600;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .header__info {
     text-align: right;
   }
+}
+
+.font-accent-green {
+  color: #7ED321;
+  font-size: 18px;
+}
+
+.font-accent-purple {
+  color: $accent-font-second;
+  font-size: 18px;
 }
 
 .nav {
