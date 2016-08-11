@@ -1,5 +1,4 @@
 .header {
-  border: solid 1px $c-gray;
   &__info {
     text-align: center;
   }
@@ -18,4 +17,23 @@
   &__link {
     color: $accent-font-first;
   }
+}
+
+//Bootstrap Overrides
+.nav-pills>li>a {
+  border-radius: 0px;
+  height: auto;
+}
+
+.nav-pills>li:hover {
+  background-color: #512A65;
+}
+
+.nav-pills>li>a:hover {
+  background-color: #512A65;
+  color: $accent-font-first ;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .nav-pills>li.active {
+  background-color: #512A65;
 }
