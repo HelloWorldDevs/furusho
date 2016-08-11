@@ -1,0 +1,10 @@
+.marquee {
+  color: $accent-font-first;
+  &__slide {
+    top: 0px;
+    bottom: 0px;
+    background-position: center center;
+    background-size: cover;
+
+  }
+}
