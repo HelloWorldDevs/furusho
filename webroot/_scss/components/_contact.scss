@@ -1,0 +1,17 @@
+.contact {
+  border: solid 1px $c-gray;
+  &__main {
+
+  }
+  &__title {
+    font-weight: bold;
+  }
+  &__phone {
+    font-style: italic;
+  }
+  &__address {
+    &--line1 {
+
+    }
+  }
+}
