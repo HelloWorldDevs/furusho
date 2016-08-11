@@ -1,4 +1,9 @@
 .btn {
   color: $accent-font-first;
   background-color: $background-dark;
+  &--inverted {
+    background: #FFD700;
+    color: rgba(80,42,100,0.90);
+    letter-spacing: -0.33px;
+  }
 }

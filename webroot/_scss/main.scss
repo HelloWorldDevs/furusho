@@ -1,3 +1,13 @@
+@import "base/_colors.scss";
+@import "globals/_fonts.scss";
+@import "components/_contact.scss";
+@import "components/_specials.scss";
+@import "components/_services.scss";
+@import "components/_footer.scss";
+@import "components/_marquee.scss";
+@import "components/_header.scss";
+@import "components/_btn.scss";
+@import "vendor/_slick-theme.scss";
 
 body {
   padding: 15px;
@@ -64,12 +74,21 @@ label {
   font-weight: 400;
 }
 
-@import "base/_colors.scss";
-@import "globals/_fonts.scss";
-@import "components/_contact.scss";
-@import "components/_specials.scss";
-@import "components/_services.scss";
-@import "components/_footer.scss";
-@import "components/_header.scss";
-@import "components/_btn.scss";
+//Slick Overrides
 
+.slick-next {
+  right: 25px;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+//Font Awesome Custom
+
+.fa-star {
+  &--custom {
+    color: #FFD700;
+    font-size: 30px;
+  }
+}

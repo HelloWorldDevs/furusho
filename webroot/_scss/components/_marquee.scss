@@ -1,0 +1,15 @@
+.marquee {
+  height: 550px;
+  color: $accent-font-first;
+    background-position: center center;
+    background-size: cover;
+  &__slide {
+  }
+  &__slide-wrapper {
+    height: 550px;
+  }
+
+  .btn {
+    margin: 40px 0px;
+  }
+}
