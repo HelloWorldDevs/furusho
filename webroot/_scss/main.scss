@@ -2,10 +2,20 @@
 @import "globals/_fonts.scss";
 @import "components/_contact.scss";
 @import "components/_specials.scss";
+@import "components/_footer.scss";
 @import "components/_header.scss";
 @import "components/_btn.scss";
 
 
 body {
   padding: 15px;
+}
+
+.heading {
+  text-align: center;
+  color: $accent-font-second;
+}
+
+.center {
+  text-align: center;
 }
