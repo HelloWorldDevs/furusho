@@ -26,4 +26,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
+exclude:
+  - bower_components
+  - node_modules
+keep_files:
+  - css
