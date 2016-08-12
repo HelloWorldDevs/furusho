@@ -12,6 +12,7 @@ $(document).ready(function() {
     dots: true,
     infinite: true,
     speed: 300,
+    width: '100%',
     slidesToShow: 1,
     centerMode: true
   });

@@ -122,5 +122,19 @@ label {
   }
   .image-pad {
     flex-grow: 1;
+    text-align: center;
   }
+}
+
+// Team Slider
+.team-slider .slick-slide {
+  text-align: center;
+  img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+.team-additional {
+  padding-top:40px;
 }
