@@ -3,6 +3,7 @@
 @import "components/_contact.scss";
 @import "components/_specials.scss";
 @import "components/_services.scss";
+@import "components/_qa.scss";
 @import "components/_footer.scss";
 @import "components/_marquee.scss";
 @import "components/_header.scss";
@@ -178,8 +179,6 @@ label {
   margin: 2px 0 0;
   padding: .5em 0;
   min-height: 0;
-  border-bottom: 1px solid #417505;
-  color: #417505;
 }
 
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
@@ -197,7 +196,7 @@ label {
 }
 
 .ui-accordion .ui-accordion-content.ui-accordion-content-active {
-  border-bottom: 1px solid #417505;
+  border-bottom: 1px solid #9B9B9B;
 }
 
 .ui-accordion-content {
@@ -212,6 +211,7 @@ label {
   overflow: auto;
   border: none;
   font-size: 95%;
+  border-bottom: 1px solid #9B9B9B;
 }
 
 .ui-helper-reset {

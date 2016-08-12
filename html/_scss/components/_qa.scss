@@ -1,0 +1,26 @@
+.qa {
+
+  &__heading {
+    margin: 0px auto 60px auto;
+    max-width: 80%;
+
+  }
+  &__icon {
+    color: #76BFB7;
+  }
+  &__question {
+    color: #4A4A4A;
+  }
+  &__question:focus {
+    outline: none;
+  }
+  &__answer {
+    padding: 15px 30px;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: -0.26px;
+    line-height: 20px;
+  }
+
+}
