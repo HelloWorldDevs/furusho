@@ -9,6 +9,10 @@
   }
   &__phone {
     font-style: italic;
+    font-size: 20px;
+    color: rgba(56,27,71,0.90);
+    letter-spacing: -0.33px;
+    line-height: 38px;
   }
   &__address {
     &--line1 {
