@@ -9,10 +9,18 @@
 @import "components/_btn.scss";
 @import "vendor/_slick-theme.scss";
 
+
+body {
+  padding: 0px;
+}
+.nav {
+  clear: both;
+}
+
 .heading {
   text-align: center;
   color: $accent-font-second;
-  padding: 20px 0px;
+  padding: 20px 0px 0px;
   line-height: 64px;
   font-size: 60px;
   font-weight: 600;
@@ -20,15 +28,25 @@
     font-size: 48px;
   }
 }
-
-
-
+.header {
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    top: 0px;
+    padding: 15px 15px 0px;
+}
+.main-container {
+  margin-top: 235px;
+}
 .center {
   text-align: center;
 }
 
 .section-margins {
   margin: 15px 0px;
+}
+.header.section-margins {
+  margin: 0;
 }
 
 .section-padding {
@@ -107,4 +125,36 @@ label {
     color: #FFD700;
     font-size: 30px;
   }
+}
+
+// Associations Slider
+.associations {
+  img {
+    width:auto;
+  }
+  .slick-slide.slide {
+    padding: 0 20px;
+    display: flex;
+    width: 100%;
+    img {
+      display: inline;
+    }
+  }
+  .image-pad {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+// Team Slider
+.team-slider .slick-slide {
+  text-align: center;
+  img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+.team-additional {
+  padding-top:40px;
 }
