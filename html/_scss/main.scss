@@ -6,6 +6,7 @@
 @import "components/_team.scss";
 @import "components/_qa.scss";
 @import "components/_footer.scss";
+@import "components/_nav.scss";
 @import "components/_marquee.scss";
 @import "components/_reviews.scss";
 @import "components/_header.scss";
@@ -120,6 +121,10 @@ nav a {
 
 label {
   font-weight: 400;
+}
+
+.nav-pills>li+li {
+  margin-left: 0px;
 }
 
 //Slick Overrides

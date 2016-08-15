@@ -1,0 +1,18 @@
+.custom-nav-btn {
+  background-color: $background-dark;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px ) {
+  .custom-nav-btn { display: none; }
+}
+
+.nav {
+
+  &__menu-icon {
+    padding: 10px 20px;
+    font-size: 40px;
+    color: white;
+  }
+}
+
