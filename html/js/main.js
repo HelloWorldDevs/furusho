@@ -36,6 +36,10 @@ $(document).ready(function() {
     $(this).parent().find('.ui-accordion-content').addClass('folded');
     $(this).next().removeClass('folded');
   });
-  
-  $('.')
+
+  $('.nav__menu-icon').on('click', function() {
+    $('.nav--toggle').toggle();
+  });
+
+
 });
