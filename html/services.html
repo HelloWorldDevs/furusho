@@ -23,61 +23,90 @@ weight: 3
             </div>
 
             <div class="row">
-                <a href="#" data-toggle="modal" data-target="#smile-modal" class="read-more">
+
+                <a href="#" data-toggle="modal" data-target="#Infant" class="read-more">
                     <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/frenectomy.jpg" alt="">
                         <h6>Infant Frenectomy</h6>
                     </div>
                 </a>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/fillings.jpg" alt="">
-                    <h6>Fillings</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/crowns.jpg" alt="">
-                    <h6>Crowns</h6>
-                </div>
+
+                <a href="#" data-toggle="modal" data-target="#Fillings" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/fillings.jpg" alt="">
+                        <h6>Fillings</h6>
+                    </div>
+                </a>
+
+                <a href="#" data-toggle="modal" data-target="#Crowns" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/crowns.jpg" alt="">
+                        <h6>Crowns</h6>
+                    </div>
+                </a>
+
             </div>
             <hr>
             <div class="row">
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/space-maintainers.jpg" alt="">
-                    <h6>Space Maintainers</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/mouth-guards.jpg" alt="">
-                    <h6>Mouth Guards</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/pulpotomy.jpg" alt="">
-                    <h6>Pulpotomy (Baby Root Canal)</h6>
-                </div>
+
+                <a href="#" data-toggle="modal" data-target="#Space" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/space-maintainers.jpg" alt="">
+                        <h6>Space Maintainers</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Mouth" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/mouth-guards.jpg" alt="">
+                        <h6>Mouth Guards</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Pulpotomy" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/pulpotomy.jpg" alt="">
+                        <h6>Pulpotomy (Baby Root Canal)</h6>
+                    </div>
+                </a>
             </div>
             <hr>
             <div class="row">
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/child-orthodontics.jpg" alt="">
-                    <h6>Orthodontic Treatment</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/sealants.jpg" alt="">
-                    <h6>Sealants</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/digital-xrays.jpg" alt="">
-                    <h6>Digital x-Rays</h6>
-                </div>
+                <a href="#" data-toggle="modal" data-target="#Orthodontic" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/child-orthodontics.jpg" alt="">
+                        <h6>Orthodontic Treatment</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Sealants" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/sealants.jpg" alt="">
+                        <h6>Sealants</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Digital" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/digital-xrays.jpg" alt="">
+                        <h6>Digital x-Rays</h6>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="services-modals">
-        <div class="modal fade" id="smile-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        {% for item in site.data.services.items %}
+
+        <div class="modal fade" id="{{ item.modalId }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-body">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Smile Makeovers</h4>
+                            <h4 class="modal-title">{{ item.service }}</h4>
                         </div>
                         <div class="modal-body">
-                            <p>Getting a smile makeover is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile can increase self confidence and overall life satisfaction. Smile makeovers can encompass things such as adult orthodontics, tooth-colored fillings, dental implants, or crowns. We have many options, so please call us for a free cosmetic consultation.</p>
+                            {% for description in item.descriptions %}
+                                <p>{{ description }}</p>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        {% endfor %}
+
     </section>
 
     {% include organisms/contact.html additional=true %}
