@@ -1,18 +1,24 @@
 .contact {
+
   color: $primary-font;
   background-color: $background-first;
+
   &__main {
 
   }
   &__title {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0px;
+
   }
   &__phone {
-    font-style: italic;
-    font-size: 20px;
-    color: rgba(56,27,71,0.90);
-    letter-spacing: -0.33px;
     line-height: 38px;
+    font-size: 40px;
+    color: rgba(56, 27, 71, 0.9);
+    letter-spacing: -0.54px;
+    font-weight: 600;
+    margin-top: 0px;
   }
   &__address {
     &--line1 {
@@ -23,8 +29,9 @@
   &--pull-right {
     text-align: center;
   }
-  &__btn {
+  &__btn.btn {
     margin-top: 5px;
+    margin-bottom: 0px;
   }
 }
 
