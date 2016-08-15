@@ -4,6 +4,7 @@ $(document).ready(function() {
     speed: 300,
     slidesToShow: 1,
     autoplay: true,
+    arrows: false,
     autoplaySpeed: 4000,
     adaptiveHeight: false
   });

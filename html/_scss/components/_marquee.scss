@@ -1,12 +1,32 @@
 .marquee {
-  height: 550px;
+  height: 600px;
   color: $accent-font-first;
     background-position: center center;
     background-size: cover;
   &__slide {
   }
   &__slide-wrapper {
-    height: 550px;
+    height: 600px;
+  }
+
+  &__main-text {
+    letter-spacing: -0.4px;
+    line-height: 67px;
+  }
+  &__byline {
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: -0.58px;
+    line-height: 38px;
+    font-weight: 200;
+  }
+  &__quote h3 {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.45px;
+  }
+  &__stars {
+    margin-top: 30px;
   }
 
   .btn {

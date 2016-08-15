@@ -57,6 +57,10 @@ h6 {
   text-align: center;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .section-margins {
   margin: 15px 0px;
 }
@@ -99,6 +103,11 @@ img {
   padding: 20px 40px;
   margin: 30px;
   border-radius: 0px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
 }
 
 h2 {
