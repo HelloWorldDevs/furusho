@@ -1,4 +1,13 @@
 .header {
+
+  .font-accent-green {
+    font-size: 18px;
+  }
+
+  .font-accent-purple {
+    font-size: 18px;
+  }
+
   &__info {
     text-align: center;
   }
@@ -12,16 +21,6 @@
   .header__info {
     text-align: right;
   }
-}
-
-.font-accent-green {
-  color: #7ED321;
-  font-size: 18px;
-}
-
-.font-accent-purple {
-  color: $accent-font-second;
-  font-size: 18px;
 }
 
 .nav {

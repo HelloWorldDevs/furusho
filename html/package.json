@@ -11,7 +11,7 @@
     "serve": "browser-sync start --server '_site' --files=_site/**/*.html,_site/css/*.css",
     "compile": "npm run compile:jekyll && npm run compile:css",
     "clean": "rm -rf _site",
-    "start": "npm run compile && npm run watch",
+    "start": "npm run clean && npm run compile && npm run watch",
     "watch": "npm run watch:jekyll & npm run watch:css & npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

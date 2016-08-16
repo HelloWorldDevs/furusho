@@ -1,0 +1,27 @@
+.about {
+
+  &__first-section {
+    padding: 60px 30px 150px 30px;
+  }
+  &__image {
+    width: 200px;
+    margin: 0px auto;
+    position: relative;
+    top: -100px;
+  }
+  &__image img {
+    border-radius: 100%;
+    border: 5px solid white;
+  }
+  &__second-section>div:nth-child(2) {
+    position: relative;
+    top: -100px;
+  }
+  &__section-section {
+    margin-bottom: -100px;
+  }
+  &__more h3 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}

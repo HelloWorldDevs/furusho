@@ -4,6 +4,7 @@
 @import "components/_specials.scss";
 @import "components/_services.scss";
 @import "components/_team.scss";
+@import "components/_about.scss";
 @import "components/_qa.scss";
 @import "components/_footer.scss";
 @import "components/_nav.scss";
@@ -71,6 +72,17 @@ h6 {
 .section-padding {
   padding: 0px 30px 30px 30px;
 }
+
+.font-accent-green {
+  color: #7ED321;
+  //font-size: 18px;
+}
+
+.font-accent-purple {
+  color: $accent-font-second;
+  //font-size: 18px;
+}
+
 
 img {
   width: 100%;
