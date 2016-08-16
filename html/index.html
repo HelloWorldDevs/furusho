@@ -51,7 +51,7 @@ weight: 0
   {% include organisms/contact.html %}
 
   <section class="about">
-    <div class="about__content container clearfix">
+    <div class="about__content clearfix">
       <div class="background-light-green about__first-section">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
@@ -64,22 +64,24 @@ weight: 0
         <div class="about__image center">
           <img src="images/circle-bios.jpg" alt="Kollman and Furusho">
         </div>
-        <div class="row">
-          <div class="col-md-6 about__more">
-            <h3 class="font-accent-purple">What is a Pediatric Dentist?</h3>
-            <p>Pediatric dentists have an additional 2-3 years of training to learn how to deal with the behavioral
-              aspects of children, how to make them feel comfortable, and to make the experience pleasant in addition to
-              clinical techniques specific to children. <span class="font--highlight">We are especially trained and qualified to treat patients with
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 about__more">
+              <h3 class="font-accent-purple">What is a Pediatric Dentist?</h3>
+              <p>Pediatric dentists have an additional 2-3 years of training to learn how to deal with the behavioral
+                aspects of children, how to make them feel comfortable, and to make the experience pleasant in addition to
+                clinical techniques specific to children. <span class="font--highlight">We are especially trained and qualified to treat patients with
               special needs.</span></p>
-            <a class="font-accent-purple" href="#">Read More</a>
-          </div>
-          <div class="col-md-6 about__more">
-            <h3 class="font-accent-purple">What Makes  Dentistry for Kids Special?</h3>
-            <p>We make an extra effort to create an exciting environment which makes a big difference, especially in the
-              case of the very apprehensive family. <span class="font--highlight">By bringing your child to a pediatric dentist as early as age one
+              <a class="font-accent-purple" href="#">Read More</a>
+            </div>
+            <div class="col-md-6 about__more">
+              <h3 class="font-accent-purple">What Makes  Dentistry for Kids Special?</h3>
+              <p>We make an extra effort to create an exciting environment which makes a big difference, especially in the
+                case of the very apprehensive family. <span class="font--highlight">By bringing your child to a pediatric dentist as early as age one
               year</span>, you can ensure the timely prevention of dental disease and at the same time provide your child with
-              an upbeat experience that can last a lifetime.</p>
-            <a class="font-accent-purple" href="#">Read More</a>
+                an upbeat experience that can last a lifetime.</p>
+              <a class="font-accent-purple" href="#">Read More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -128,23 +130,23 @@ weight: 0
     </div>
   </section>
 
-  <section class="reviews section-margins" style="background-image: url('images/home-testimonials.jpg')">
+  <section class="reviews background-light-purple">
     <div class="reviews__heading heading heading--small background-light-purple">
       <h2>See What Parents are Saying</h2>
     </div>
 
-    <div class="reviews__main">
+    <div class="reviews__main" style="background-image: url('images/home-testimonials.jpg')">
 
       <div class="reviews__slider__wrapper">
         <section class="reviews__slider">
           <div class="review__slide center">
             {% include molecule/stars.html stars=5 %}
-            <p class="reviews__review">I was myself always a little bit skeptical about dentists. When I was looking for a dentist for our girls, I had to make sure first, that it was an attractive and fun place. That was first step to get them in. What I like the most about this office, they take kids in and parents wait comfortably in the waiting area. After they done, dentist discusses if any issues or concern he/she may have. After our first appointment, girls came out so happy. And, i knew that this was the place that we will be coming back. Great location, fun waiting playroom area. Very friendly staff.</p>
+            <p class="reviews__review">I was myself always a little bit skeptical about dentists. When I was looking for a dentist for our girls, I had to make sure first, that it was an attractive and fun place... Very friendly staff.</p>
             <p class="quoty reviews__quoty">Dina M.</p>
           </div>
           <div class="review__slide center">
             {% include molecule/stars.html stars=5 s-class=review__stars %}
-            <p class="reviews__review">My older son is a sweet guy... but a big scardy cat. I had MUCH anxiety about his first dentist visit two years ago. Turns out, I had no reason to fear. He loooooves going to the dentist and I'm so grateful. We've seen both dentists (I think there's only two in the practice?) and they're both very kind. The assistants have always been sweet. My son willingly jumps up and goes into the office without even looking back. The real test is when my Velcro boy second child goes for the first time in a couple months. I'm scared for them and for me. I suspect we'll all do fine though.</p>
+            <p class="reviews__review">My older son is a sweet guy... but a big scardy cat. I had MUCH anxiety about his first dentist visit two years ago. Turns out, I had no reason to fear. He loooooves going to the dentist and I'm so grateful. We've seen both dentists (I think there's only two in the practice?) and they're both very kind.</p>
             <p class="quoty reviews__quoty">Natalie S.</p>
           </div>
           <div class="review__slide center">
@@ -159,22 +161,22 @@ weight: 0
           </div>
           <div class="review__slide center">
             {% include molecule/stars.html stars=5 s-class=review__stars %}
-            <p class="reviews__review">My 4 year old loves it here to the point that when I had to cancel an appointment, he was upset and insisted that he wanted to go to the dentist that day!  My son is comfortable with the dentist and the assistants. He loves the toys. I also love how he is comfortable with going to the dentist chair alone. I can't imagine how long an appointment would take were parents allowed to go back with the kids. I'm so glad we found this place as I had really hoped to find a dentist that my son didn't mind going to. Lucky for us, he actually loves it there.</p>
+            <p class="reviews__review">My 4 year old loves it here to the point that when I had to cancel an appointment, he was upset and insisted that he wanted to go to the dentist that day!... I'm so glad we found this place as I had really hoped to find a dentist that my son didn't mind going to. Lucky for us, he actually loves it there.</p>
             <p class="quoty reviews__quoty">s m.</p>
           </div>
           <div class="review__slide center">
             {% include molecule/stars.html stars=5 s-class=review__stars %}
-            <p class="reviews__review">Great pediatric dentist office!  I've been taking my son here for over 10 years now.  The staff is very kind and respectful.  They do ask that parents wait in the lobby while the children are being treated.  That freaked me out a little at first, but the kids all seem to get used to it quite fine.  The dentist would talk to him at the end of his appointment about his observations, shake his hand, and call him Mr. M...  I think my son appreciated being treated like an adult.  At the beginning of every appointment, the hygenist comes out to speak with the parent and just reiterates what the appointment is for and what they'll be doing.  At the end of the appointment, the hygenist comes out to the parent with the child and goes over what treatments the child had as well as any observations.  If it something more serious, you are asked to go into the office where the dentist will point out any problems and suggest course of treatment.  Fortunately, my son has had only one cavity so far.  He's a teen now so he'll probably be transferring over to my dentist soon, but I'm appreciative that this office has always made him feel comfortable.  I highly recommend this office for your child.</p>
+            <p class="reviews__review">Great pediatric dentist office!  I've been taking my son here for over 10 years now.  The staff is very kind and respectful...  I highly recommend this office for your child.</p>
             <p class="quoty reviews__quoty">Melissa M.</p>
           </div>
           <div class="review__slide center">
             {% include molecule/stars.html stars=5 s-class=review__stars %}
-            <p class="reviews__review">We took our 1.5 and 2.5 year old kids here for their first visit to the dentist. We immediately felt at ease and were warmly welcomed by the office staff. There were toys for the kids to play with and even though my little boy went back in tears, in no time at all he was sitting comfortable in the chair and getting his teeth cleaned. We were a bit nervous and the hygienist came back two different times to get us and let us peek in on the kids to show us how well they were doing. When we picked up our daughter she was sitting on a hygienist's lap playing a game on an iPad. The dentists were so gentle and kind to our kids and took the time to talk to us after the exam and allowed us to ask any questions. I would highly recommend this dental office for anyone looking for a pediatric dentist.</p>
+            <p class="reviews__review">We took our 1.5 and 2.5 year old kids here for their first visit to the dentist. We immediately felt at ease and were warmly welcomed by the office staff. There were toys for the kids to play with and even though my little boy went back in tears, in no time at all he was sitting comfortable in the chair and getting his teeth cleaned... I would highly recommend this dental office for anyone looking for a pediatric dentist.</p>
             <p class="quoty reviews__quoty">Julie T.</p>
           </div>
           <div class="review__slide center">
             {% include molecule/stars.html stars=5 s-class=review__stars %}
-            <p class="reviews__review">We drive over 40 miles (and past another 40 ped. dentists) to go here.  They are the only pediatric dentists we have found that use no anesthesia.  We tried another, closer ped. dentist earlier this year who said general anesthesia (in a hospital setting) would be required to fill my 30lb 3year old's cavity.  Since I was uncomfortable with that I called D4K and made an appointment.  They filled my daughter's cavities on our first visit.  Not only did she not require gen. anesthesia, but she didn't need novacain!  The cavities were so small Dr Farusho was able to fill them with just a topical cream.  When I asked my daughter about it (she came out smiling, by the way) she said it was fine, she didn't cry, and it didn't hurt.  Clearly it wasn't the traumatic experience the other dentist was so worried about.  I think these dentists take a very no nonsense but calm and loving approach to dentistry, which is exactly how it should be.</p>
+            <p class="reviews__review">We drive over 40 miles (and past another 40 ped. dentists) to go here.  They are the only pediatric dentists we have found that use no anesthesia...  I think these dentists take a very no nonsense but calm and loving approach to dentistry, which is exactly how it should be.</p>
             <p class="quoty reviews__quoty">RoxAnne T.</p>
           </div>
           <div class="review__slide center">

@@ -36,7 +36,12 @@ section {
 .row-height-wrapper {
   display: flex;
   justify-content: center;
+}
 
+@media screen and (max-width: 768px) {
+  .row-height-wrapper {
+    display: block;
+  }
 }
 
 .nav {
