@@ -28,6 +28,16 @@ h6 {
   font-family: 'OpenSans';
 }
 
+section {
+  background-position: center center;
+  background-size: cover;
+}
+
+.row-height-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
 
 .nav {
   clear: both;
@@ -75,12 +85,14 @@ h6 {
 
 .font-accent-green {
   color: #7ED321;
-  //font-size: 18px;
 }
 
 .font-accent-purple {
   color: $accent-font-second;
-  //font-size: 18px;
+}
+
+.font-accent-white {
+  color: $accent-font-first;
 }
 
 
