@@ -2,6 +2,11 @@
 
   &__first-section {
     padding: 60px 30px 150px 30px;
+    text-align: center;
+  }
+  &__first-section p {
+    padding-top: 20px;
+    \
   }
   &__image {
     width: 200px;
@@ -27,6 +32,17 @@
   &__more a {
     float: right;
     margin-right: 20px;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.29px;
+  }
+  &__lead-quote {
+    font-size: 24px;
+    color: #4A4A4A;
+    letter-spacing: -0.39px;
+    line-height: 31px;
+    text-align: center;
   }
 }
 
