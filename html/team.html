@@ -95,34 +95,34 @@ weight: 1
             </section>
             <section class="team-additional background-light-purple">
                 <div class="team-slider">
-                    <div class="team-member"><img src="images/bios/adam-bio.jpg" alt="adam"><a href="#" data-toggle="modal" data-target="adam">Adam</a></div>
+                    <div class="team-member"><img src="images/bios/adam-bio.jpg" alt="adam"><a href="#" data-toggle="modal" data-target="#adam">Adam</a></div>
                     <div class="team-member"><img src="images/bios/berman-bio.jpg" alt="berman"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="berman">Berman</a>
+                                                                                               data-target="#berman">Berman</a>
                     </div>
                     <div class="team-member"><img src="images/bios/cassidy-bio.jpg" alt="cassidy"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="cassidy">Cassidy Johnson</a>
+                                                                                               data-target="#cassidy">Cassidy Johnson</a>
                     </div>
                     <div class="team-member"><img src="images/bios/deneaqua-bio.jpg" alt="deneaqua"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="deneaqua">Deneaqua Brown</a>
+                                                                                               data-target="#deneaqua">Deneaqua Brown</a>
                     </div>
                     <div class="team-member"><img src="images/bios/letticia-bio.jpg" alt="letticia"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="letticia">Letticia</a>
+                                                                                               data-target="#letticia">Letticia</a>
                     </div>
                     <div class="team-member"><img src="images/bios/marisela.jpg" alt="marisela"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="marisela">Marisela Paz</a>
+                                                                                               data-target="#marisela">Marisela Paz</a>
                     </div>
                     <div class="team-member"><img src="images/bios/michael-bio.jpg" alt="michael"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="michael">Michael</a>
+                                                                                               data-target="#michael">Michael</a>
                     </div>
                     <div class="team-member"><img src="images/bios/tanisha-bio.jpg" alt="tanisha"><a href="#"
                                                                                                data-toggle="modal"
-                                                                                               data-target="tanisha">Tanisha</a>
+                                                                                               data-target="#tanisha">Tanisha</a>
                     </div>
                 </div>
 
@@ -134,4 +134,28 @@ weight: 1
     </section>
 
     {% include organisms/contact.html additional=true %}
+
+    <section class="team-modals">
+
+        {% for item in site.data.team.items %}
+
+        <div class="modal fade" id="{{ item.modalId }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">{{ item.name }}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>{{ item.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </section>
 </div>
