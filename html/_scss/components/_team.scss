@@ -12,4 +12,13 @@
     font-size: 36px;
     font-weight: 100;
   }
+  &__modal-pic {
+    text-align: center;
+    & img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
 }
+

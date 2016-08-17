@@ -95,34 +95,53 @@ weight: 1
             </section>
             <section class="team-additional background-light-purple">
                 <div class="team-slider">
-                    <div class="team-member"><img src="images/bios/adam-bio.jpg" alt="adam"><a href="#" data-toggle="modal" data-target="#adam">Adam</a></div>
-                    <div class="team-member"><img src="images/bios/berman-bio.jpg" alt="berman"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#berman">Berman</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#adam">
+                            <img src="images/bios/adam-bio.jpg" alt="adam">
+                            <h5>Adam</h5>
+                        </a>
                     </div>
-                    <div class="team-member"><img src="images/bios/cassidy-bio.jpg" alt="cassidy"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#cassidy">Cassidy Johnson</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#berman">
+                            <img src="images/bios/berman-bio.jpg" alt="berman">
+                            <h5>Berman</h5>
+                        </a>
                     </div>
-                    <div class="team-member"><img src="images/bios/deneaqua-bio.jpg" alt="deneaqua"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#deneaqua">Deneaqua Brown</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#cassidy">
+                            <img src="images/bios/cassidy-bio.jpg" alt="cassidy">
+                            <h5>Cassidy</h5>
+                        </a>
                     </div>
-                    <div class="team-member"><img src="images/bios/letticia-bio.jpg" alt="letticia"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#letticia">Letticia</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#deneaqua">
+                            <img src="images/bios/deneaqua-bio.jpg" alt="deneaqua">
+                            <h5>Deneaqua</h5>
+                        </a>
                     </div>
-                    <div class="team-member"><img src="images/bios/marisela.jpg" alt="marisela"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#marisela">Marisela Paz</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#letticia">
+                            <img src="images/bios/letticia-bio.jpg" alt="letticia">
+                            <h5>Letticia</h5>
+                        </a>
                     </div>
-                    <div class="team-member"><img src="images/bios/michael-bio.jpg" alt="michael"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#michael">Michael</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#marisela">
+                            <img src="images/bios/marisela.jpg" alt="marisela">
+                            <h5>Marisela</h5>
+                        </a>
                     </div>
-                    <div class="team-member"><img src="images/bios/tanisha-bio.jpg" alt="tanisha"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#tanisha">Tanisha</a>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#michael">
+                            <img src="images/bios/michael-bio.jpg" alt="michael">
+                            <h5>Michael</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#tanisha">
+                            <img src="images/bios/tanisha-bio.jpg" alt="tanisha">
+                            <h5>Tanisha</h5>
+                        </a>
                     </div>
                 </div>
 
@@ -147,7 +166,8 @@ weight: 1
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title">{{ item.name }}</h4>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/{{ item.modalId }}-bio.jpg" alt="">
                             <p>{{ item.text }}</p>
                         </div>
                     </div>
