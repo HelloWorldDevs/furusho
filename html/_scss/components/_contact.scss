@@ -47,6 +47,31 @@
   }
 }
 
+.location {
+
+  &__address {
+    color: #4A4A4A;
+    font-size: 18px;
+    margin: 15px 0px;
+  }
+  &__phone--big {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  &__phone--small {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  &__phone--byline {
+    font-size: 20px;
+    color: #4A4A4A;
+    margin: 0px;
+    line-height: 30px;
+  }
+
+}
 @media screen and (min-width: 992px) {
   .contact {
     &--pull-left {

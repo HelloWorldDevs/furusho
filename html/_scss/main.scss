@@ -28,9 +28,17 @@ h6 {
   font-family: 'OpenSans';
 }
 
+a {
+  cursor: pointer;
+}
+
 section {
   background-position: center center;
   background-size: cover;
+}
+
+.mobile-hide {
+  display: none;
 }
 
 .row-height-wrapper {

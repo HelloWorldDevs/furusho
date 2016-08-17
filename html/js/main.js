@@ -30,7 +30,8 @@ $(document).ready(function() {
     speed: 300,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 4000
+    autoplaySpeed: 4000,
+    prevArrow: "<i class='fa fa-arrow-circle-o-left slick-prev' aria-hidden='true'></i>"
   });
   
   $('.ui-accordion-header').click(function () {
