@@ -45,3 +45,24 @@
   }
 }
 
+h5.about__lead-quote:after {
+  font-family: Georgia-Bold;
+  font-size: 72px;
+  color: #8117B7;
+  letter-spacing: -1.16px;
+  line-height: 0px;
+  content: "”";
+  position: relative;
+  top: 30px;
+}
+
+h5.about__lead-quote:before {
+  font-family: Georgia-Bold;
+  font-size: 72px;
+  color: #8117B7;
+  letter-spacing: -1.16px;
+  line-height: 38px;
+  content: "“";
+  position: relative;
+  top: 30px;
+}
