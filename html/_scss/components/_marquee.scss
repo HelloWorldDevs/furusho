@@ -39,7 +39,12 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    //flex-direction: column;
+    padding:20px;
+  }
+  &--flex-topleft {
+    align-items: flex-start;
+    justify-content: flex-start;
+
   }
   &--custom {
     position: relative;
