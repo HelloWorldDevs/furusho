@@ -75,6 +75,7 @@ section {
   background: #fff;
   top: 0px;
   padding: 15px 15px 0px;
+  width: 100%;
 }
 .main-container {
   margin-top: 235px;
@@ -307,4 +308,15 @@ label {
 .team-additional .slick-dots button:before {
   color: #8117B7;
   font-size: 36px;
+}
+
+.slick-next:before {
+  content: " ";
+  display: block;
+  background: url("images/arrow-circle-left.svg") no-repeat;
+  background-color: #0b0e10;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
 }
