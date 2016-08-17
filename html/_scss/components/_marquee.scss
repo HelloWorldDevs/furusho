@@ -38,5 +38,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    //flex-direction: column;
+  }
+  &--custom {
+    position: relative;
+  }
+  &__scroll-down {
+    position: relative;
+    bottom: 80px;
+    text-align: center;
+  }
+  &__scroll-down a {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  &__scroll-down img {
+    width: 38px;
   }
 }

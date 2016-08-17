@@ -9,21 +9,29 @@ weight: 4
 <div class="main-container container">
 
     <section class="marquee" style="background-image: url('images/frenectomy-slide.jpg');">
-        <div class="marquee__wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-8 frenectomy__title">
-                        <h1>Discover how this simple procedure can keep your baby smiling</h1>
+        <div class="marquee--flex">
+            <div class="marquee__wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8 frenectomy__title">
+                            <h1>Discover how this simple procedure can keep your baby smiling</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__frenectomy">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
         </div>
     </section>
 
     {% include organisms/contact.html %}
 
-    <section class="frenectomy background-light-purple section-margins">
+    <section id="section__frenectomy" class="frenectomy background-light-purple section-margins">
         <div class="frenectomy__wrapper container clearfix">
             <div class="heading frenectomy__heading">
                 <h2>Infant Frenectomy</h2>
