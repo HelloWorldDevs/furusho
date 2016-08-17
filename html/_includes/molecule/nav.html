@@ -1,5 +1,12 @@
 <nav class="clearfix">
-    <ul class="nav nav-pills nav-justified">
+
+    <div class="custom-nav-btn">
+        <div class="pull-left">
+            <i class="nav__menu-icon fa fa-bars"></i>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills nav-justified nav--toggle">
         <li><a class="nav__link" href="index.html#">New Patient Specials</a></li>
         <li><a class="nav__link" href="index.html#">Patient Reviews</a></li>
         {% assign sorted = site.pages | sort:"weight" %}

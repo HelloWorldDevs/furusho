@@ -1,0 +1,24 @@
+.team {
+  &__main-title {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  &__heading.heading {
+    padding-top: 10px;
+  }
+  &--byline {
+    font-size: 36px;
+    font-weight: 100;
+  }
+  &__modal-pic {
+    text-align: center;
+    & img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+}
+

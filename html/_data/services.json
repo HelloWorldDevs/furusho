@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "service": "Infant Frenectomy",
+      "modalId": "Infant",
+      "descriptions": [
+        "We are all born with tissue connecting our tongue to the floor of the lower jaw, but for some babies it is so tight that they cannot move their tongues properly. This can affect their ability to breastfeed, or even take a bottle or a pacifier. If your child struggles to latch on when breastfeeding or using a bottle, they may be lip tied or tongue-tied. Call us today and ask us about this simple procedure that will improve your child’s health."
+      ],
+    },
+    {
+      "service": "Fillings",
+      "modalId": "Fillings",
+      "descriptions": [
+        "A composite filling is a tooth colored quartz-like material. After tooth decay is removed and cleaned, this tooth colored material is layered into the tooth. Each layer is hardened or cured with highly intense visible light, and the final surface is shaped and polished to match the tooth. The final restoration is virtually invisible. Composite fillings are more than just attractive. They require minimal tooth preparation, in other words less healthy tooth structure is removed to restore the tooth."
+      ],
+    },
+    {
+      "service": "Crowns",
+      "modalId": "Crowns",
+      "descriptions": [
+        "A crown (often called a cap) covers the tooth and restores it to its original shape and size. Decay is removed and cleaned from the tooth and a preformed crown is placed over the tooth. Unlike adult crowns, in which the crown is made to fit the tooth, which require 2 appointments, baby crowns are placed in one visit, because the tooth is prepared to fit the crown. Crowns are incredibly strong due to the fact that they are cover the entire tooth. This protects and strengthens the remaining tooth structure."
+      ],
+    },
+    {
+      "service": "Space Maintainers",
+      "modalId": "Space",
+      "descriptions": [
+        "If your child has prematurely lost a tooth, we may recommend a space-maintainer which is a combination of bands and wires designed to hold the remaining teeth in a position that will allow the future permanent tooth to erupt in the proper location. This will minimize orthodontic problems caused by premature loss of a baby tooth."
+      ],
+    },
+    {
+      "service": "Mouth Guards",
+      "modalId": "Mouth",
+      "descriptions": [
+        "Athletic mouth protectors are comprised of soft plastic. Mouth guards protect the teeth from possible sport injuries. They not only protect the teeth, but the lips, cheeks, tongue and jaw bone as well. They can contribute to the protection of a child from head and neck injuries such as concussions. During any sports based activity where there is risk of head, face or neck injury. Such sports include Hockey, Soccer, Karate, Basketball, Baseball, Skating, Skateboarding, as well as many other sports. Most oral injuries occur when children are not wearing a mouth guard."
+      ],
+    },
+    {
+      "service": "Pulpotomy",
+      "modalId": "Pulpotomy",
+      "descriptions": [
+        "Decay that has reached the nerve or pulp of a baby tooth requires a pulpotomy or baby root canal. Like adult root canals, the dentist will access the nerve chamber of the tooth, and remove some of the nerve/pulp of the tooth. Unlike adult root canals, this is a very short procedure, as only part of the pulp needs to be removed, and does not require the time consuming filing of adult root canals. Pulpotomies have a 90% success rate. Occasionally, the nerve of the tooth is so badly damaged that it does not respond to pulp therapy, resulting in the need for extraction of the offending tooth."
+      ],
+    },
+    {
+      "service": "Orthodontic Treatment",
+      "modalId": "Orthodontic",
+      "descriptions": [
+        "The outcome of orthodontic treatment can be dramatic - beautiful smiles, improved dental health and an enhanced quality of life for people of all ages. Orthodontic problems must be diagnosed before treatment begins. Proper diagnosis involves careful study of photographs, x-rays, and dental impressions.",
+        "Pediatric dentists are trained to monitor and evaluate growth and development of the teeth and supporting bone structure. As your child grows we will determine when orthodontic intervention is necessary. We will work with you to modify your child's growth and development and recommend early orthodontic treatment or wait until your child's adult teeth have grown in to start the process."
+      ],
+    },
+    {
+      "service": "Sealants",
+      "modalId": "Sealants",
+      "descriptions": [
+        "Normal pits and grooves on the chewing surfaces of back teeth can trap food that can't be removed by brushing or washed out by water or saliva. A clear or tooth colored sealant is painted onto the tooth surface to seal the pits and grooves and protect against decay. They are generally applied to children's first permanent back teeth. They can also be useful for adults in certain situations. Sealants are an excellent way to protect chewing surfaces of teeth from decay. They are a much better financial investment than treating decay after it has started."
+      ],
+    },
+    {
+      "service": "Digital X-Rays",
+      "modalId": "Digital",
+      "descriptions": [
+        "Dental x-rays or radiographs are very important. They allow the dentist to see things about your oral health that cannot be seen by the naked eye. These items include cysts (sacks of fluid that form on the roots of teeth), cancerous and non-cancerous tumors, invisible decay that occurs between teeth, and the location of teeth that haven't grown all the way in. Modern dental x-ray machines are very safe. We use only state-of-the-art, low radiation machines. The amount of radiation exposure your body receives on an airplane flight from Los Angeles to New York exceeds the amount of exposure you will receive from a modern dental x-ray machine."
+      ]
+    }
+  ]
+}

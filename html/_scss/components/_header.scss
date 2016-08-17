@@ -1,4 +1,17 @@
 .header {
+
+  &__logo {
+    text-align: left;
+  }
+
+  .font-accent-green {
+    font-size: 18px;
+  }
+
+  .font-accent-purple {
+    font-size: 18px;
+  }
+
   &__info {
     text-align: center;
   }
@@ -12,16 +25,6 @@
   .header__info {
     text-align: right;
   }
-}
-
-.font-accent-green {
-  color: #7ED321;
-  font-size: 18px;
-}
-
-.font-accent-purple {
-  color: $accent-font-second;
-  font-size: 18px;
 }
 
 .nav {
@@ -50,4 +53,17 @@
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .nav-pills>li.active {
   background-color: #512A65;
+}
+
+//Responsive fixes
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    text-align: center;
+    &__logo img {
+      max-width: 400px;
+    }
+  }
+
 }

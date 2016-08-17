@@ -1,14 +1,24 @@
 .contact {
+
   color: $primary-font;
   background-color: $background-first;
+
   &__main {
 
   }
   &__title {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0px;
+
   }
   &__phone {
-    font-style: italic;
+    line-height: 38px;
+    font-size: 40px;
+    color: rgba(56, 27, 71, 0.9);
+    letter-spacing: -0.54px;
+    font-weight: 600;
+    margin-top: 0px;
   }
   &__address {
     &--line1 {
@@ -19,8 +29,9 @@
   &--pull-right {
     text-align: center;
   }
-  &__btn {
+  &__btn.btn {
     margin-top: 5px;
+    margin-bottom: 0px;
   }
 }
 
@@ -36,6 +47,32 @@
   }
 }
 
+.location {
+
+  &__address {
+    color: #4A4A4A;
+    font-size: 18px;
+    margin: 15px 0px;
+  }
+  &__phone--big {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  &__phone--small {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  &__phone--byline {
+    font-size: 20px;
+    color: #4A4A4A;
+    margin: 0px;
+    line-height: 30px;
+  }
+
+}
 @media screen and (min-width: 992px) {
   .contact {
     &--pull-left {

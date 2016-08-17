@@ -8,37 +8,45 @@ weight: 2
 ---
 <div class="main-container container">
 
-    <section class="marquee">
-        <div class="marquee_wrapper clearfix">
-            <div class="marquee__slick">
-                <div class="marquee__slide" style="background-image: url('images/tour/tour1.jpg');">
-                    <div class="marquee__slide-wrapper">
-                        <div class="slide--text-center container center">
-                            <h1>Scheduling Your First Appointment is Easy!</h1>
+    <section class="marquee marquee--custom">
+        <div>
+            <div class="marquee__wrapper clearfix">
+                <div class="marquee__slick">
+                    <div class="marquee__slide" style="background-image: url('images/tour/tour1.jpg');">
+                        <div class="marquee__slide-wrapper">
+                            <div class="slide--text-center container center">
+                                <h1>Scheduling Your First Appointment is Easy!</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee__slide" style="background-image: url('images/tour/tour2.jpg');">
+                        <div class="marquee__slide-wrapper">
+                            <div class="slide--text-center container center">
+                                <h1>Scheduling Your First Appointment is Easy!</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee__slide" style="background-image: url('images/tour/tour3.jpg');">
+                        <div class="marquee__slide-wrapper">
+                            <div class="slide--text-center container center">
+                                <h1>Scheduling Your First Appointment is Easy!</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="marquee__slide" style="background-image: url('images/tour/tour2.jpg');">
-                    <div class="marquee__slide-wrapper">
-                        <div class="slide--text-center container center">
-                            <h1>Scheduling Your First Appointment is Easy!</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="marquee__slide" style="background-image: url('images/tour/tour3.jpg');">
-                    <div class="marquee__slide-wrapper">
-                        <div class="slide--text-center container center">
-                            <h1>Scheduling Your First Appointment is Easy!</h1>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="smooth-scroll-btn marquee__scroll-down">
+                <a href="" data-href="#section__visit">
+                    <h4 class="scroll__text">Scroll Down</h4>
+                    <img src="images/arrow-down.svg" alt="Down Arrow">
+                </a>
             </div>
         </div>
     </section>
 
     {% include organisms/contact.html %}
 
-    <section class="first-visit background-light-purple section-margins section-padding">
+    <section id="section__visit" class="first-visit background-light-purple section-margins section-padding">
         <div class="first-visit__content clearfix">
             <div class="heading first-visit__heading">
                 <h2>The First Dental Visit</h2>
@@ -68,14 +76,37 @@ weight: 2
         </div>
     </section>
 
-    <section class="qa clearfix section-margins">
-        <div class="qa-content">
+    <section class="qa clearfix section-margins section-padding background-light-green">
+        <div class="qa__wrapper">
             <div class="heading qa__heading">
-                <h2>Parent Questions & Answers</h2>
+                <h2>Parent Questions  & Answers</h2>
             </div>
-
-            <h1>Accordian QA List goes here</h1>
         </div>
+
+        <div class="qu_content">
+            <!--Accordion-->
+            <div class="service-accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+
+                {% for item in site.data.questions.items %}
+
+                <h3 class="qa__question ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-{{ forLoop.index*2-1 }}"
+                    aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="-1">
+                    <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">
+                    </span><i class="qa__icon fa fa-check-square-o"></i> {{ item.question }}</h3>
+                <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom {% if forLoop.first %}ui-accordion-content-active{% else %}folded{% endif %}" id="ui-id-{{ forLoop.index*2 }}"
+                     aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true">
+
+                    {% for answer in item.answers %}
+                        <p class="qa__answer {% if forLoop.last %}nobottommargin{% endif %}">{{ answer }}</p>
+                    {% endfor %}
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
     </section>
 
     <section class="comfort background-light-purple section-margins section-padding">
@@ -85,7 +116,7 @@ weight: 2
             </div>
 
             <div class="col-md-6">
-                <img src="" alt="">
+                <img src="images/patient-comfort.jpg" alt="Smiling young girl">
             </div>
             <div class="col-md-6">
                 <p>Our office was designed for infants, children and teens. From the arcade games in the waiting room to

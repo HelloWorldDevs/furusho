@@ -9,55 +9,113 @@ weight: 3
 <div class="main-container container">
 
     <section class="marquee" style="background-image: url('images/services-masthead.jpg');">
-        <div class="marquee__wrapper">
 
+        <div class="marquee--flex marquee--flex--bottomright">
+            <div class="marquee__wrapper marquee__title--smaller">
+                <h1>Find out more about<br>Dentistry for Kids</h1>
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__services">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
         </div>
     </section>
 
     {% include organisms/contact.html %}
 
-    <section class="services section-margins">
+    <section id="section__services" class="services section-margins">
         <div class="services__content clearfix">
             <div class="heading services__heading">
                 <h2>Pediatric Services</h2>
             </div>
 
             <div class="row">
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/frenectomy.jpg" alt="">
-                    <h6>Infant Frenectomy</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/fillings.jpg" alt="">
-                    <h6>Fillings</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/crowns.jpg" alt="">
-                    <h6>Crowns</h6>
-                </div>
+
+                <a href="#" data-toggle="modal" data-target="#Infant" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/frenectomy.jpg" alt="">
+                        <h6>Infant Frenectomy</h6>
+                    </div>
+                </a>
+
+                <a href="#" data-toggle="modal" data-target="#Fillings" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/fillings.jpg" alt="">
+                        <h6>Fillings</h6>
+                    </div>
+                </a>
+
+                <a href="#" data-toggle="modal" data-target="#Crowns" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/crowns.jpg" alt="">
+                        <h6>Crowns</h6>
+                    </div>
+                </a>
+
             </div>
             <hr>
             <div class="row">
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/space-maintainers.jpg" alt="">
-                    <h6>Space Maintainers</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/mouth-guards.jpg" alt="">
-                    <h6>Mouth Guards</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/pulpotomy.jpg" alt="">
-                    <h6>Pulpotomy (Baby Root Canal)</h6>
-                </div>
+
+                <a href="#" data-toggle="modal" data-target="#Space" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/space-maintainers.jpg" alt="">
+                        <h6>Space Maintainers</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Mouth" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/mouth-guards.jpg" alt="">
+                        <h6>Mouth Guards</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Pulpotomy" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/pulpotomy.jpg" alt="">
+                        <h6>Pulpotomy (Baby Root Canal)</h6>
+                    </div>
+                </a>
             </div>
             <hr>
             <div class="row">
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/child-orthodontics.jpg" alt="">
-                    <h6>Orthodontic Treatment</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/sealants.jpg" alt="">
-                    <h6>Sealants</h6>
-                </div>
-                <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/digital-xrays.jpg" alt="">
-                    <h6>Digital x-Rays</h6>
+                <a href="#" data-toggle="modal" data-target="#Orthodontic" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/child-orthodontics.jpg" alt="">
+                        <h6>Orthodontic Treatment</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Sealants" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/sealants.jpg" alt="">
+                        <h6>Sealants</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Digital" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/digital-xrays.jpg" alt="">
+                        <h6>Digital x-Rays</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-modals">
+
+        {% for item in site.data.services.items %}
+
+        <div class="modal fade" id="{{ item.modalId }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">{{ item.service }}</h4>
+                        </div>
+                        <div class="modal-body">
+                            {% for description in item.descriptions %}
+                                <p>{{ description }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        {% endfor %}
+
     </section>
 
     {% include organisms/contact.html additional=true %}

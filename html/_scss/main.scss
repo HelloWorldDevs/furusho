@@ -3,8 +3,14 @@
 @import "components/_contact.scss";
 @import "components/_specials.scss";
 @import "components/_services.scss";
+@import "components/_frenectomy.scss";
+@import "components/_team.scss";
+@import "components/_about.scss";
+@import "components/_qa.scss";
 @import "components/_footer.scss";
+@import "components/_nav.scss";
 @import "components/_marquee.scss";
+@import "components/_reviews.scss";
 @import "components/_header.scss";
 @import "components/_btn.scss";
 @import "vendor/_slick-theme.scss";
@@ -12,7 +18,42 @@
 
 body {
   padding: 0px;
+  color: #4A4A4A;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'OpenSans';
+}
+
+a {
+  cursor: pointer;
+}
+
+section {
+  background-position: center center;
+  background-size: cover;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.row-height-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .row-height-wrapper {
+    display: block;
+  }
+}
+
 .nav {
   clear: both;
 }
@@ -20,7 +61,7 @@ body {
 .heading {
   text-align: center;
   color: $accent-font-second;
-  padding: 20px 0px 0px;
+  padding: 0px 0px 15px 0px;
   line-height: 64px;
   font-size: 60px;
   font-weight: 600;
@@ -29,17 +70,21 @@ body {
   }
 }
 .header {
-    position: fixed;
-    z-index: 100;
-    background: #fff;
-    top: 0px;
-    padding: 15px 15px 0px;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  top: 0px;
+  padding: 15px 15px 0px;
 }
 .main-container {
   margin-top: 235px;
 }
 .center {
   text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .section-margins {
@@ -50,8 +95,21 @@ body {
 }
 
 .section-padding {
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
 }
+
+.font-accent-green {
+  color: #7ED321;
+}
+
+.font-accent-purple {
+  color: $accent-font-second;
+}
+
+.font-accent-white {
+  color: $accent-font-first;
+}
+
 
 img {
   width: 100%;
@@ -86,10 +144,15 @@ img {
   border-radius: 0px;
 }
 
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
 h2 {
   font-size: 60px;
   //font-weight: 400;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 h6 {
@@ -106,6 +169,10 @@ nav a {
 
 label {
   font-weight: 400;
+}
+
+.nav-pills>li+li {
+  margin-left: 0px;
 }
 
 //Slick Overrides
@@ -157,4 +224,87 @@ label {
 
 .team-additional {
   padding-top:40px;
+}
+
+//accordion
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 2px 0 0;
+  padding: .5em 0;
+  min-height: 0;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.ui-accordion .ui-accordion-content.ui-accordion-content-active {
+  border-bottom: 1px solid #9B9B9B;
+}
+
+.ui-accordion-content {
+  max-height: 500px;
+  transition: .5s max-height ease;
+}
+.folded {
+  max-height: 0px;
+}
+.ui-accordion .ui-accordion-content {
+  margin: .5em 0;
+  overflow: auto;
+  border: none;
+  font-size: 95%;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+.team-additional .slick-dots {
+  background-color: $background-second;
+}
+
+.slick-dots li {
+  margin: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #541376;
+  opacity: 0.75;
+}
+
+.team-additional .slick-dots button:before {
+  color: #8117B7;
+  font-size: 36px;
 }

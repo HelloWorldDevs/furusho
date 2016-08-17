@@ -8,32 +8,42 @@ weight: 5
 ---
 <div class="main-container container">
 
-    <section class="marquee" style="background-image: url('images/services-masthead.jpg');">
-        <div class="marquee__wrapper">
-
+    <section class="marquee marquee--custom" style="background-image: url('images/contact-masthead.jpg');">
+        <div class="marquee--flex">
+            <div class="marquee__wrapper">
+                <h1>Come Visit<br>Us Today!</h1>
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__location">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
         </div>
     </section>
 
-    <section class="location section-margins">
+    <section id="section__location" class="location section-margins">
         <div class="location__wrapper container clearfix">
             <div class="heading location__heading">
                 <h2>Our Location</h2>
             </div>
-            
+
+
             <div class="row location__content">
                 <div class="col-md-4 col-sm-6 center">
                     <img src="images/horizontal-logo.png" alt="Denistry for Kids Logo">
-                    <h6>4801 West Peterson, Suite 410 </h6>
-                    <h6>Chicago, IL 60646</h6>
+                    <h6 class="location__address" >4801 West Peterson, Suite 410 <br>Chicago, IL 60646</h6>
                 </div>
                 <div class="col-md-4 col-sm-6 center">
-                    <h5>New Patient Hotline</h5>
-                    <h3 class="font-accent-purple">{{ site.data.content.contact.phone-new }}</h3>
-                    <h5>Existing Patient Hotline</h5>
-                    <h4 class="font-accent-purple">{{ site.data.content.contact.phone-existing }}</h4>
+                    <h5 class="location__phone--byline" >New Patient Hotline</h5>
+                    <h3 class="font-accent-purple location__phone--big">{{ site.data.content.contact.phone-new }}</h3>
+                    <h5 class="location__phone--byline" >Existing Patient Hotline</h5>
+                    <h4 class="font-accent-purple location__phone--small">{{ site.data.content.contact.phone-existing }}</h4>
                 </div>
                 <div class="col-md-4 col-sm-12 center">
-                    <img src="images/furusho-map.jpg" alt="map">
+                    <a target="_blank" href="https://www.google.com/maps/place/Dentistry+For+Kids+Ltd/@41.9895692,-87.748975,15z/data=!4m5!3m4!1s0x0:0x1ffaf3247fe075f8!8m2!3d41.9895692!4d-87.748975">
+                        <img src="images/furusho-map.jpg" alt="map">
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,7 +81,7 @@ weight: 5
         <div class="hipaa__wrapper container clearfix center">
             <p>This form, <strong>Notice of Privacy Practices</strong>, presents the information that federal law requires us to give our
                 patients regarding our privacy practices.</p>
-            <a href="#">HIPAA Notice</a>
+            <a target="_blank" href="hipaa-notice.pdf">HIPAA Notice</a>
         </div>
     </section>
 </div>
