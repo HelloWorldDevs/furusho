@@ -9,14 +9,23 @@ weight: 3
 <div class="main-container container">
 
     <section class="marquee" style="background-image: url('images/services-masthead.jpg');">
-        <div class="marquee__wrapper">
 
+        <div class="marquee--flex marquee--flex--bottomright">
+            <div class="marquee__wrapper marquee__title--smaller">
+                <h1>Find out more about<br>Dentistry for Kids</h1>
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__services">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
         </div>
     </section>
 
     {% include organisms/contact.html %}
 
-    <section class="services section-margins">
+    <section id="section__services" class="services section-margins">
         <div class="services__content clearfix">
             <div class="heading services__heading">
                 <h2>Pediatric Services</h2>

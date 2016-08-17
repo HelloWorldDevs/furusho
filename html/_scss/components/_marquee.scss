@@ -44,6 +44,10 @@
   &--custom {
     position: relative;
   }
+  &__title--smaller h1 {
+    font-size: 48px;
+    padding: 10px;
+  }
   &__scroll-down {
     position: relative;
     bottom: 80px;
@@ -56,5 +60,12 @@
   }
   &__scroll-down img {
     width: 38px;
+  }
+}
+
+@media screen and (min-width: 1204px) {
+  .marquee--flex--bottomright {
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 }
