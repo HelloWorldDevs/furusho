@@ -7,8 +7,8 @@
     </div>
 
     <ul class="nav nav-pills nav-justified nav--toggle">
-        <li><a class="nav__link" href="index.html#">New Patient Specials</a></li>
-        <li><a class="nav__link" href="index.html#">Patient Reviews</a></li>
+        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New Patient Specials</a></li>
+        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient Reviews</a></li>
         {% assign sorted = site.pages | sort:"weight" %}
         {% for item in sorted %}
             {% if item.link.text and item.link.text != "Home" %}
