@@ -74,7 +74,6 @@ section {
   z-index: 100;
   background: #fff;
   top: 0px;
-  padding: 15px 15px 0px;
   width: 100%;
 }
 .main-container {
@@ -294,7 +293,7 @@ label {
 }
 
 //Label for Google Street View
-section.marquee.marquee--custom:after {
+section.marquee.marquee--captioned:after {
   display: block;
   position: absolute;
   content: "Image Capture: Nov 2015 ©2016 Google";
@@ -314,3 +313,4 @@ section.marquee.marquee--custom:after {
   display: none;
 }
 
+@import '_responsivefixes.scss';
