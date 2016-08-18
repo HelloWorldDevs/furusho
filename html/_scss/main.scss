@@ -284,3 +284,16 @@ label {
   font-size: 100%;
   list-style: none;
 }
+
+//Label for Google Street View
+section.marquee.marquee--custom:after {
+  display: block;
+  position: absolute;
+  content: "Image Capture: Nov 2015 ©2016 Google";
+  bottom: 0px;
+  right: 0px;
+  background-color: #434343;
+  padding: 2px;
+  font-size: 10px;
+}
+
