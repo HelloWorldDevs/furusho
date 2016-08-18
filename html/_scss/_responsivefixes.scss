@@ -37,6 +37,9 @@
   .team--byline {
     font-size: 32px;
   }
+  .marquee__scroll-down {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
