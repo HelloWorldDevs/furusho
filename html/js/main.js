@@ -6,7 +6,7 @@ $(document).ready(function() {
     autoplay: true,
     arrows: false,
     autoplaySpeed: 4000,
-    adaptiveHeight: false
+    adaptiveHeight: true
   });
 
   $('.associations').slick({
@@ -30,8 +30,7 @@ $(document).ready(function() {
     speed: 300,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    prevArrow: "<i class='fa fa-arrow-circle-o-left slick-prev' aria-hidden='true'></i>"
+    autoplaySpeed: 4000
   });
   
   $('.ui-accordion-header').click(function () {

@@ -176,15 +176,8 @@ label {
   margin-left: 0px;
 }
 
-//Slick Overrides
+@import "components/_slick.scss";
 
-.slick-next {
-  right: 25px;
-}
-
-.slick-prev {
-  left: 25px;
-}
 
 //Font Awesome Custom
 
@@ -290,33 +283,4 @@ label {
   text-decoration: none;
   font-size: 100%;
   list-style: none;
-}
-
-.team-additional .slick-dots {
-  background-color: $background-second;
-}
-
-.slick-dots li {
-  margin: 5px;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #541376;
-  opacity: 0.75;
-}
-
-.team-additional .slick-dots button:before {
-  color: #8117B7;
-  font-size: 36px;
-}
-
-.slick-next:before {
-  content: " ";
-  display: block;
-  background: url("images/arrow-circle-left.svg") no-repeat;
-  background-color: #0b0e10;
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 0 6px 0 0;
 }

@@ -49,6 +49,10 @@
   &--custom {
     position: relative;
   }
+  &--adaptive {
+    height: 100%;
+    margin-bottom: -40px;
+  }
   &__title--smaller h1 {
     font-size: 48px;
     padding: 10px;

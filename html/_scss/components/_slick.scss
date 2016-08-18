@@ -1,0 +1,56 @@
+//Slick Overrides
+
+.team-additional .slick-dots {
+  background-color: $background-second;
+}
+
+.slick-dots li {
+  margin: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #541376;
+  opacity: 0.75;
+}
+
+.team-additional .slick-dots button:before {
+  color: #8117B7;
+  font-size: 36px;
+}
+
+
+//arrows
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+.slick-next:before {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  border: 1px solid white;
+  border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+
+}
+
+.slick-prev:before {
+  content: " \f053";
+  font-family: 'FontAwesome';
+  border: 1px solid white;
+  border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
