@@ -40,6 +40,9 @@
   .marquee__scroll-down {
     display: none;
   }
+  .marquee {
+    min-height: 400px;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
