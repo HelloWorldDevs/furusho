@@ -43,6 +43,9 @@
   .marquee {
     min-height: 400px;
   }
+  .marquee__slide-wrapper h1 {
+    padding: 100px 0px 150px 0px;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
@@ -50,4 +53,8 @@
   .container, #header.full-header .container, .container-fullwidth {
      width: 100% !important;
   }
+}
+
+.marquee__slide-wrapper h1 {
+  padding: 150px 0px 200px 0px;
 }
