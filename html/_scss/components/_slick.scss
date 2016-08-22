@@ -40,13 +40,38 @@
   height: 30px;
   font-size: 20px;
   line-height: 30px;
-
 }
 
 .slick-prev:before {
   content: " \f053";
   font-family: 'FontAwesome';
   border: 1px solid white;
+  border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.team-slick-nav.slick-next:before {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  border: 1px solid #8117B7;
+  color: #8117B7;
+  border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.team-slick-nav.slick-prev:before {
+  content: " \f053";
+  font-family: 'FontAwesome';
+  border: 1px solid #8117B7;
+  color: #8117B7;
   border-radius: 100%;
   display: block;
   width: 30px;

@@ -22,7 +22,9 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 4
+    slidesToScroll: 4,
+    prevArrow: "<button type='button' class='slick-prev team-slick-nav'>Previous</button>",
+    nextArrow: "<button type='button' class='slick-next team-slick-nav'>Next</button>"
   });
   $('.reviews__slider').slick({
     dots: true,
