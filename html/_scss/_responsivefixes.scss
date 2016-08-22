@@ -41,20 +41,37 @@
     display: none;
   }
   .marquee {
-    min-height: 400px;
+    min-height: 200px;
   }
   .marquee__slide-wrapper h1 {
     padding: 100px 0px 150px 0px;
   }
 }
 
-@media (max-width: 767px) and (min-width: 480px) {
+@media (max-width: 767px) {
+
+  .services__content hr {
+    display: none;
+  }
+  
+  .marquee {
+    height: 100%;
+  }
+
+  .review__slide {
+    padding: 10px 50px;
+  }
 
   .container, #header.full-header .container, .container-fullwidth {
      width: 100% !important;
   }
+
+  .marquee__slide-wrapper h1 {
+    padding: 0px 0px 0px 0px;
+  }
+  .marquee__slide-wrapper.marquee-patients h1 {
+    padding: 50px 0px;
+  }
+;
 }
 
-.marquee__slide-wrapper h1 {
-  padding: 150px 0px 200px 0px;
-}

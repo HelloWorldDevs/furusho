@@ -24,10 +24,28 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 4,
     prevArrow: "<button type='button' class='slick-prev team-slick-nav'>Previous</button>",
-    nextArrow: "<button type='button' class='slick-next team-slick-nav'>Next</button>"
+    nextArrow: "<button type='button' class='slick-next team-slick-nav'>Next</button>",
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000
+        }
+      }
+        ]
   });
   $('.reviews__slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
