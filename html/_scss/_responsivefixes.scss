@@ -1,3 +1,7 @@
+h1.marquee-patients-content {
+  padding: 150px 0px 200px 0px;
+}
+
 @media (max-width: 767px) {
   .marquee__byline h3 {
     font-size: 20px;
@@ -53,7 +57,7 @@
   .services__content hr {
     display: none;
   }
-  
+
   .marquee {
     height: 100%;
   }
@@ -72,6 +76,5 @@
   .marquee__slide-wrapper.marquee-patients h1 {
     padding: 50px 0px;
   }
-;
-}
 
+}
