@@ -1,0 +1,332 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tysone Steele Associates</title>
+    <meta name='keywords' content='Providing Pediatric Dentistry and Orthodontics to Chicago.'/>
+    <meta name='description' content='Pediatric Dentists Cissy Furusho, Kirk Kollmann and Marvin Berman offer dentistry for children, kids, and teens in the Chicago area!' />
+    <meta name="author" content="Hello World"/>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="vendor/font-awesome.css">
+
+    <!--Bootstrao-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Slick Carousel-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="vendor/slick.css">
+
+    <!--TODO ask Dan about modernizr-->
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+<section class="header">
+    <header class="header__content wrapper clearfix">
+
+        <div class="col-md-7 col-sm-6">
+            <div class="header__logo">
+                <img src="images/furusho-masthead-logo.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-6">
+            <div class="header__info">
+                <h4 class="font-accent-green">Just off Edens Expressway (Hwy&nbsp;94)</h4>
+                <h5 class="font-accent-purple">New Patients: <span class="header__info--bold">(888) 540-7885</span></h5>
+                <h6>Existing Patients: (773) 545-0007</h6>
+            </div>
+        </div>
+        <nav class="clearfix">
+
+    <div class="custom-nav-btn">
+        <div class="pull-left">
+            <i class="nav__menu-icon fa fa-bars"></i>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills nav-justified nav--toggle">
+        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New Patient Specials</a></li>
+        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient Reviews</a></li>
+        
+        
+            
+        
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="team.html">Meet The Team</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="patients.html">Patients</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="services.html">Services</a>
+                </li>
+            
+        
+            
+                <li  class="active" >
+                    <a class="nav__link" href="frenectomy.html">Infant Frenectomy</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="contact.html">Contact</a>
+                </li>
+            
+        
+    </ul>
+</nav>
+    </header>
+</section>
+
+<div class="container">
+  <div class="main-container container">
+
+    <section class="marquee" style="background-image: url('images/frenectomy-slide.jpg');">
+        <div class="marquee--flex">
+            <div class="marquee__wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8 frenectomy__title">
+                            <h1>Discover how this simple procedure can keep your baby smiling</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__frenectomy">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
+        </div>
+    </section>
+
+    <section class="contact section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">(888) 540-7885</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" data-toggle="modal" data-target="#modal-form"class="btn btn-default contact__btn">Request Appointment</a>
+            </div>
+        </div>
+
+        <h4 class="center">Existing patient of our practice call: (773) 545-0007</h4>
+        
+
+    </div>
+</section>
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <section id="section__frenectomy" class="frenectomy background-light-purple section-margins">
+        <div class="frenectomy__wrapper container clearfix">
+            <div class="heading frenectomy__heading">
+                <h2>Infant Frenectomy</h2>
+            </div>
+
+            <div class="frenectomy__content row">
+                <div class="col-sm-4"><img src="images/frenectomy-photo.jpg" alt="frenectomy">
+                </div>
+                <div class="col-sm-8">
+                    <h4 class="frenectomy--byline-font">What is a Lip Tie or Tongue Tie?</h4>
+                    <p>Well before your baby is born, you are committed to doing everything possible to help him or her
+                        grow up happy, strong and healthy. Sometimes, you both need extra help to accomplish this, and
+                        one common but easily treated problem some parents and infants face is a restrictive frenum.
+                        This is also called a frenulum and is commonly known as tongue-tie or lip-tie.</p>
+                    <p>A frenum is a stretch of tissue that connects and holds other tissues in place. The lingual
+                        frenum is the tissue under the tongue connecting the tongue to the floor of the mouth. The
+                        maxillary labial frenum is the tissue attaching the upper lip to the mouth.</p>
+                    <br>
+                    <h4 class="frenectomy--byline-font">What is a Frenectomy?</h4>
+                    <p>For a newborn, lip-tie or tongue-tie can make breastfeeding difficult for the infant and painful
+                        for the mother because the lip and/or tongue's limited movement prevents the infant from
+                        properly latching on and drawing milk from the breast. If left untreated, it can eventually
+                        impair the child's speech and proper tooth alignment. The newborns we treat should nurse
+                        immediately and sometimes moms will notice a very significant difference both in the quantity
+                        that the newborn consumes as well as their personal comfort while nursing.</p>
+                    <p>Lip-tie and tongue-tie can be corrected by a procedure called frenectomy/ frenotomy. This can be
+                        performed with scissors or a soft tissue laser. It is a simple in office procedure which can be
+                        performed by Dr. Kollmann or Dr. Furusho.</p>
+                    <p>Together, we'll do everything possible to help your little one grow up happy, strong and
+                        healthy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact contact--has-additional section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">(888) 540-7885</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" data-toggle="modal" data-target="#modal-form"class="btn btn-default contact__btn">Request Appointment</a>
+            </div>
+        </div>
+
+        <h4 class="center">Existing patient of our practice call: (773) 545-0007</h4>
+        
+        <hr>
+
+        <div class="contact__additional">
+            <div class="center">
+                <h6 class="contact__address contact__address--line1">4801 West Peterson, Suite 410</h6>
+                <h6 class="contact__address contact__address--line2">Chicago, IL 60646</h6>
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<section class="footer">
+    <footer class="footer__wrapper center clearfix">
+        <div class="footer__content">
+            <a target="_blank" href="https://www.facebook.com/Dentistry-for-Kids-Ltd-Dr-Furusho-Dr-Kollmann-293517314003627/"><img src="images/facebook_round_blue.svg" alt="facebook link" class="facebook-icon pull-left"></a>
+            <h6 class="footer__text">Copyright © 2016 All Rights Reserved by Tyson Steele Associates. Privacy Policy</h6>
+        </div>
+    </footer>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>window.slick || document.write('<script src="js/vendor/slick.min.js"><\/script>')</script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/functions.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tysone Steele Associates</title>
+    <meta name='keywords' content='Providing Pediatric Dentistry and Orthodontics to Chicago.'/>
+    <meta name='description' content='Pediatric Dentists Cissy Furusho, Kirk Kollmann and Marvin Berman offer dentistry for children, kids, and teens in the Chicago area!' />
+    <meta name="author" content="Hello World"/>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="vendor/font-awesome.css">
+
+    <!--Bootstrao-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Slick Carousel-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="vendor/slick.css">
+
+    <!--TODO ask Dan about modernizr-->
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+<section class="header">
+    <header class="header__content wrapper clearfix">
+
+        <div class="col-md-7 col-sm-6">
+            <div class="header__logo">
+                <img src="images/furusho-masthead-logo.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-6">
+            <div class="header__info">
+                <h4 class="font-accent-green">Just off Edens Expressway (Hwy&nbsp;94)</h4>
+                <h5 class="font-accent-purple">New Patients: <span class="header__info--bold">(888) 540-7885</span></h5>
+                <h6>Existing Patients: (773) 545-0007</h6>
+            </div>
+        </div>
+        <nav class="clearfix">
+
+    <div class="custom-nav-btn">
+        <div class="pull-left">
+            <i class="nav__menu-icon fa fa-bars"></i>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills nav-justified nav--toggle">
+        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New Patient Specials</a></li>
+        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient Reviews</a></li>
+        
+        
+            
+        
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="team.html">Meet The Team</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="patients.html">Patients</a>
+                </li>
+            
+        
+            
+                <li  class="active" >
+                    <a class="nav__link" href="services.html">Services</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="frenectomy.html">Infant Frenectomy</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="contact.html">Contact</a>
+                </li>
+            
+        
+    </ul>
+</nav>
+    </header>
+</section>
+
+<div class="container">
+  <div class="main-container container">
+
+    <section class="marquee" style="background-image: url('images/services-masthead.jpg');">
+
+        <div class="marquee--flex marquee--flex--bottomright">
+            <div class="marquee__wrapper marquee__title--smaller">
+                <h1>Find out more about<br>Dentistry for Kids</h1>
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__services">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
+        </div>
+    </section>
+
+    <section class="contact section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">(888) 540-7885</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" data-toggle="modal" data-target="#modal-form"class="btn btn-default contact__btn">Request Appointment</a>
+            </div>
+        </div>
+
+        <h4 class="center">Existing patient of our practice call: (773) 545-0007</h4>
+        
+
+    </div>
+</section>
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <section id="section__services" class="services section-margins">
+        <div class="services__content clearfix">
+            <div class="heading services__heading">
+                <h2>Pediatric Services</h2>
+            </div>
+
+            <div class="row">
+
+                <a href="#" data-toggle="modal" data-target="#Infant" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/frenectomy.jpg" alt="">
+                        <h6>Infant Frenectomy</h6>
+                    </div>
+                </a>
+
+                <a href="#" data-toggle="modal" data-target="#Fillings" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/fillings.jpg" alt="">
+                        <h6>Fillings</h6>
+                    </div>
+                </a>
+
+                <a href="#" data-toggle="modal" data-target="#Crowns" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/crowns.jpg" alt="">
+                        <h6>Crowns</h6>
+                    </div>
+                </a>
+
+            </div>
+            <hr>
+            <div class="row">
+
+                <a href="#" data-toggle="modal" data-target="#Space" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/space-maintainers.jpg" alt="">
+                        <h6>Space Maintainers</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Mouth" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/mouth-guards.jpg" alt="">
+                        <h6>Mouth Guards</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Pulpotomy" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/pulpotomy.jpg" alt="">
+                        <h6>Pulpotomy (Baby Root Canal)</h6>
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div class="row">
+                <a href="#" data-toggle="modal" data-target="#Orthodontic" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/child-orthodontics.jpg" alt="">
+                        <h6>Orthodontic Treatment</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Sealants" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/sealants.jpg" alt="">
+                        <h6>Sealants</h6>
+                    </div>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#Digital" class="read-more">
+                    <div class="center col-sm-4 services__tile"><img class="services__image" src="images/services/digital-xrays.jpg" alt="">
+                        <h6>Digital x-Rays</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-modals">
+
+        
+
+        <div class="modal fade" id="Infant" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Infant Frenectomy</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>We are all born with tissue connecting our tongue to the floor of the lower jaw, but for some babies it is so tight that they cannot move their tongues properly. This can affect their ability to breastfeed, or even take a bottle or a pacifier. If your child struggles to latch on when breastfeeding or using a bottle, they may be lip tied or tongue-tied. Call us today and ask us about this simple procedure that will improve your child’s health.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Fillings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Fillings</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>A composite filling is a tooth colored quartz-like material. After tooth decay is removed and cleaned, this tooth colored material is layered into the tooth. Each layer is hardened or cured with highly intense visible light, and the final surface is shaped and polished to match the tooth. The final restoration is virtually invisible. Composite fillings are more than just attractive. They require minimal tooth preparation, in other words less healthy tooth structure is removed to restore the tooth.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Crowns" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Crowns</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>A crown (often called a cap) covers the tooth and restores it to its original shape and size. Decay is removed and cleaned from the tooth and a preformed crown is placed over the tooth. Unlike adult crowns, in which the crown is made to fit the tooth, which require 2 appointments, baby crowns are placed in one visit, because the tooth is prepared to fit the crown. Crowns are incredibly strong due to the fact that they are cover the entire tooth. This protects and strengthens the remaining tooth structure.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Space" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Space Maintainers</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>If your child has prematurely lost a tooth, we may recommend a space-maintainer which is a combination of bands and wires designed to hold the remaining teeth in a position that will allow the future permanent tooth to erupt in the proper location. This will minimize orthodontic problems caused by premature loss of a baby tooth.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Mouth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Mouth Guards</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>Athletic mouth protectors are comprised of soft plastic. Mouth guards protect the teeth from possible sport injuries. They not only protect the teeth, but the lips, cheeks, tongue and jaw bone as well. They can contribute to the protection of a child from head and neck injuries such as concussions. During any sports based activity where there is risk of head, face or neck injury. Such sports include Hockey, Soccer, Karate, Basketball, Baseball, Skating, Skateboarding, as well as many other sports. Most oral injuries occur when children are not wearing a mouth guard.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Pulpotomy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Pulpotomy</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>Decay that has reached the nerve or pulp of a baby tooth requires a pulpotomy or baby root canal. Like adult root canals, the dentist will access the nerve chamber of the tooth, and remove some of the nerve/pulp of the tooth. Unlike adult root canals, this is a very short procedure, as only part of the pulp needs to be removed, and does not require the time consuming filing of adult root canals. Pulpotomies have a 90% success rate. Occasionally, the nerve of the tooth is so badly damaged that it does not respond to pulp therapy, resulting in the need for extraction of the offending tooth.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Orthodontic" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Orthodontic Treatment</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>The outcome of orthodontic treatment can be dramatic - beautiful smiles, improved dental health and an enhanced quality of life for people of all ages. Orthodontic problems must be diagnosed before treatment begins. Proper diagnosis involves careful study of photographs, x-rays, and dental impressions.</p>
+                            
+                                <p>Pediatric dentists are trained to monitor and evaluate growth and development of the teeth and supporting bone structure. As your child grows we will determine when orthodontic intervention is necessary. We will work with you to modify your child's growth and development and recommend early orthodontic treatment or wait until your child's adult teeth have grown in to start the process.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Sealants" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Sealants</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>Normal pits and grooves on the chewing surfaces of back teeth can trap food that can't be removed by brushing or washed out by water or saliva. A clear or tooth colored sealant is painted onto the tooth surface to seal the pits and grooves and protect against decay. They are generally applied to children's first permanent back teeth. They can also be useful for adults in certain situations. Sealants are an excellent way to protect chewing surfaces of teeth from decay. They are a much better financial investment than treating decay after it has started.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="Digital" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Digital X-Rays</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                                <p>Dental x-rays or radiographs are very important. They allow the dentist to see things about your oral health that cannot be seen by the naked eye. These items include cysts (sacks of fluid that form on the roots of teeth), cancerous and non-cancerous tumors, invisible decay that occurs between teeth, and the location of teeth that haven't grown all the way in. Modern dental x-ray machines are very safe. We use only state-of-the-art, low radiation machines. The amount of radiation exposure your body receives on an airplane flight from Los Angeles to New York exceeds the amount of exposure you will receive from a modern dental x-ray machine.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <section class="contact contact--has-additional section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">(888) 540-7885</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" data-toggle="modal" data-target="#modal-form"class="btn btn-default contact__btn">Request Appointment</a>
+            </div>
+        </div>
+
+        <h4 class="center">Existing patient of our practice call: (773) 545-0007</h4>
+        
+        <hr>
+
+        <div class="contact__additional">
+            <div class="center">
+                <h6 class="contact__address contact__address--line1">4801 West Peterson, Suite 410</h6>
+                <h6 class="contact__address contact__address--line2">Chicago, IL 60646</h6>
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<section class="footer">
+    <footer class="footer__wrapper center clearfix">
+        <div class="footer__content">
+            <a target="_blank" href="https://www.facebook.com/Dentistry-for-Kids-Ltd-Dr-Furusho-Dr-Kollmann-293517314003627/"><img src="images/facebook_round_blue.svg" alt="facebook link" class="facebook-icon pull-left"></a>
+            <h6 class="footer__text">Copyright © 2016 All Rights Reserved by Tyson Steele Associates. Privacy Policy</h6>
+        </div>
+    </footer>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>window.slick || document.write('<script src="js/vendor/slick.min.js"><\/script>')</script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/functions.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+
+</body>
+</html>

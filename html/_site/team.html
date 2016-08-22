@@ -1,0 +1,574 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tysone Steele Associates</title>
+    <meta name='keywords' content='Providing Pediatric Dentistry and Orthodontics to Chicago.'/>
+    <meta name='description' content='Pediatric Dentists Cissy Furusho, Kirk Kollmann and Marvin Berman offer dentistry for children, kids, and teens in the Chicago area!' />
+    <meta name="author" content="Hello World"/>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="vendor/font-awesome.css">
+
+    <!--Bootstrao-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Slick Carousel-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="vendor/slick.css">
+
+    <!--TODO ask Dan about modernizr-->
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+<section class="header">
+    <header class="header__content wrapper clearfix">
+
+        <div class="col-md-7 col-sm-6">
+            <div class="header__logo">
+                <img src="images/furusho-masthead-logo.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-6">
+            <div class="header__info">
+                <h4 class="font-accent-green">Just off Edens Expressway (Hwy&nbsp;94)</h4>
+                <h5 class="font-accent-purple">New Patients: <span class="header__info--bold">(888) 540-7885</span></h5>
+                <h6>Existing Patients: (773) 545-0007</h6>
+            </div>
+        </div>
+        <nav class="clearfix">
+
+    <div class="custom-nav-btn">
+        <div class="pull-left">
+            <i class="nav__menu-icon fa fa-bars"></i>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills nav-justified nav--toggle">
+        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New Patient Specials</a></li>
+        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient Reviews</a></li>
+        
+        
+            
+        
+            
+        
+            
+                <li  class="active" >
+                    <a class="nav__link" href="team.html">Meet The Team</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="patients.html">Patients</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="services.html">Services</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="frenectomy.html">Infant Frenectomy</a>
+                </li>
+            
+        
+            
+                <li >
+                    <a class="nav__link" href="contact.html">Contact</a>
+                </li>
+            
+        
+    </ul>
+</nav>
+    </header>
+</section>
+
+<div class="container">
+  <div class="main-container container">
+
+    <section class="marquee marquee--custom" style="background-image: url('images/drs-slide.jpg');">
+        <div class="marquee--flex marquee--flex-topleft">
+            <div class="marquee__wrapper">
+                <h1 class="font-accent-purple">A caring & positive<br>dental experience<br>for your kids</h1>
+                <h2 class="team--byline font-accent-purple">Meet Drs. Kirk Kollmann <br>& Cissy Furusho</h2>
+            </div>
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down">
+            <a href="" data-href="#section__team">
+                <h4 class="scroll__text">Scroll Down</h4>
+                <img src="images/arrow-down.svg" alt="Down Arrow">
+            </a>
+        </div>
+    </section>
+
+    <section class="contact section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">(888) 540-7885</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" data-toggle="modal" data-target="#modal-form"class="btn btn-default contact__btn">Request Appointment</a>
+            </div>
+        </div>
+
+        <h4 class="center">Existing patient of our practice call: (773) 545-0007</h4>
+        
+
+    </div>
+</section>
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <section id="section__team" class="team section-margins">
+        <div class="team_wrapper clearfix">
+
+            <div class="heading team__heading background-light-purple">
+                <h2>Meet The Team</h2>
+            </div>
+
+            <div class="background-light-purple">
+                <div class="container">
+                    <div class="row furusho">
+                        <div class="col-sm-3 furusho__image">
+                            <img src="images/bios/furusho-bio.jpg" alt="">
+                        </div>
+                        <div class="col-sm-9 furusho-bio">
+                            <h3 class="team__main-title font-accent-purple">Cissy K. Furusho, DDS</h3>
+                            <p>Dr. Cissy K. Furusho received her B.S. in biology from the University of Illinois,
+                                Champaign-Urbana and graduated with her D.D.S., her pediatric certificate, and her masters in
+                                oral biology from UIC College of Dentistry. She holds a certificate in Orofacial Myofunctional
+                                Therapy. She is highly involved in the American Association of Women Dentist and is also very
+                                active as a member in the American Academy of Pediatric Dentistry, the American Dental
+                                Association and the Chicago Dental Society. Dr. Furusho is also a clinical instructor at the
+                                University of Illinois at Chicago, College of Dentistry. She enjoys riding her bicycle and loves
+                                to bake and spend time with her family. Dr. Furusho is very excited to be working with her
+                                pediatric dentist Dr. Berman and feels very fortunate to have found a wonderful partner in Dr.
+                                Kollmann. She looks forward to being an important part in your children's lives!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row kollman">
+                    <div class="col-sm-3 col-sm-push-9 kollman__image">
+                        <img src="images/bios/kollmann-bio.jpg" alt="">
+                    </div>
+                    <div class="col-sm-9 col-sm-pull-3 kollman-bio">
+                        <h3 class="team__main-title font-accent-purple">Kirk B. Kollman, DMD</h3>
+                        <p>Dr. Kirk Kollmann graduated from the University of Florida College of Dentistry and received his
+                            pediatric dental degree from Children's Hospital of Michigan in Detroit. Keeping with his
+                            hospital background, he is a clinical instructor and volunteers his time working with the Cleft
+                            Palate - Craniofacial Team at Children's Memorial Hospital. Dr. Kollmann has taken extensive
+                            continuing education in the field of Orafacial Myofunctional Therapist by the Academy of
+                            Orofacial Myofunctional Therapy. He serves as a spokesperson for the Chicago Dental Society and
+                            is involved in various aspects of organized dentistry. He loves to be the do-it-yourself
+                            craftsman, being proficient in electricity, carpentry, woodworking, plumbing, etc. Computers and
+                            gadgets are another one of his hobbies. He holds great respect for his partner Dr. Furusho.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <section class="associations">
+                <div class="slide">
+                   <div class="image-pad"><img src="images/associations/aapd.png" alt="aapd"/></div>
+                    <div class="image-pad"><img src="images/associations/acd.png" alt="acd"/></div>
+                    <div class="image-pad"><img src="images/associations/abpd.png" alt="abpd"/></div>
+                </div>
+                <div class="slide">
+                    <div class="image-pad"><img src="images/associations/ada.png" alt="ada"/></div>
+                    <div class="image-pad"><img src="images/associations/ald.png" alt="ald"/></div>
+                    <div class="image-pad"><img src="images/associations/cds.png" alt="cds"/></div>
+                    <div class="image-pad"><img src="images/associations/iatp.png" alt="iatp"/></div>
+                </div>
+                <div class="slide">
+                    <div class="image-pad"><img src="images/associations/aap.png" alt="aap"/></div>
+
+                    <div class="image-pad"><img src="images/associations/ilca.png" alt="ilca"/></div>
+                    <div class="image-pad"><img src="images/associations/isds.png" alt="isds"/></div>
+                </div>
+            </section>
+            <section class="team-additional background-light-purple">
+                <div class="team-slider">
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#adam">
+                            <img src="images/bios/adam-bio.jpg" alt="adam">
+                            <h5>Adam</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#berman">
+                            <img src="images/bios/berman-bio.jpg" alt="berman">
+                            <h5>Berman</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#cassidy">
+                            <img src="images/bios/cassidy-bio.jpg" alt="cassidy">
+                            <h5>Cassidy</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#deneaqua">
+                            <img src="images/bios/deneaqua-bio.jpg" alt="deneaqua">
+                            <h5>Deneaqua</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#letticia">
+                            <img src="images/bios/letticia-bio.jpg" alt="letticia">
+                            <h5>Letticia</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#marisela">
+                            <img src="images/bios/marisela.jpg" alt="marisela">
+                            <h5>Marisela</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#michael">
+                            <img src="images/bios/michael-bio.jpg" alt="michael">
+                            <h5>Michael</h5>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#tanisha">
+                            <img src="images/bios/tanisha-bio.jpg" alt="tanisha">
+                            <h5>Tanisha</h5>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+    <section class="contact contact--has-additional section-margins">
+    <div class="contact__content container clearfix">
+
+        <div class="row">
+            <div class="col-md-6 contact--pull-right">
+                <div>
+                    <h5 class="contact__title">New Patient Hotline</h5>
+                    <h3 class="contact__phone">(888) 540-7885</h3>
+                </div>
+            </div>
+            <div class="col-md-6  contact--pull-left">
+                <a href="#" data-toggle="modal" data-target="#modal-form"class="btn btn-default contact__btn">Request Appointment</a>
+            </div>
+        </div>
+
+        <h4 class="center">Existing patient of our practice call: (773) 545-0007</h4>
+        
+        <hr>
+
+        <div class="contact__additional">
+            <div class="center">
+                <h6 class="contact__address contact__address--line1">4801 West Peterson, Suite 410</h6>
+                <h6 class="contact__address contact__address--line2">Chicago, IL 60646</h6>
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <section class="team-modals">
+
+        
+
+        <div class="modal fade" id="berman" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Dr. Marvin Berman</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/berman-bio.jpg" alt="">
+                            <p>Dr. Marvin Berman has been a pediatric dentist for more than four decades. He serves on the Council of Dental Practice and is a Consumer Advisor for the American Dental Association as well as a spokesman for the American Academy of Pediatric Dentistry. He is a renowned Lecturer and shares his expertise at dental meetings throughout the world. He has published numerous articles and his instructional videotapes are part of the curriculum of many dental schools. Music and theater are his other passions but he's particularly proud of his wife Joyce and their four children and seven grandchildren. Dr. Berman is grateful for the professional and personal relationship he has nurtured with Dr. Kollmann and Dr. Furusho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="deneaqua" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Deneaqua Brown</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/deneaqua-bio.jpg" alt="">
+                            <p>Deneaqua (Nicky), an important part of Dentistry for Kids for the last 9 years is a qualified expanded function dental assistant having successfully completed her certification in coronal polishing and sealant placement. She has 4 children…Lakyhia, Raymond, Lajarius and Aujulay and her grandchild…Deontae. In her spare time Nicky enjoys cooking, hair styling and spending time with her family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="letticia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Letticia Chavez</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/letticia-bio.jpg" alt="">
+                            <p>Hello! I’d like to introduce myself - I’m Letticia, but you can call me Letty, one of the newest team members here at Dentistry for Kids. I am excited to be part of this awesome team! I have a 5 year-old son, Isaiah. We love to watch movies together and summer time is our favorite season. In my spare time I enjoy football, basketball, swimming and sand volleyball with my friends. I am looking forward to meeting everyone and getting to know your children!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="cassidy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Cassidy Johnson</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/cassidy-bio.jpg" alt="">
+                            <p>Hello! I'm Cassidy and I have been a part of the Dentistry for Kids team since 2012! I'm am excited and ecstatic to be working with such a fantastic and friendly team. I attended Gordon Tech and graduated from Evanston Township High School. In my spare time I like to spend time with my family and friends. I enjoy watching, playing and attending all Chicago sports games. I also enjoy cooking, shopping and traveling. My latest adventure is Peru and hiking Machu Picchu. I’m looking forward to seeing our patients and parents everyday!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="marisela" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Marisela Paz</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/marisela-bio.jpg" alt="">
+                            <p>Marisela, our office manager, is celebrating 19 years with Dentistry For Kids and she is the person that makes certain that the office operates as smoothly as possible. Mari is happily married to her husband, Mike and they are proud of their children Bianca and Isaac. The family enjoys biking, riding, movies and spending time with their dog . . . Libby. Marisela volunteers at her children’s schools and is actively involved with the Juvenile Diabetes Research Foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="adam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Adam Ramirez</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/adam-bio.jpg" alt="">
+                            <p>Adam, is one of the lead dental assistants at Dentistry for KIds. He received his dental assistant degree from Triton College and continued on to receive his certification in coronal polishing and sealant placement. Adam is happily married. He is a Chicago native and loves showing his son and wife the best the city has to offer. The love Adam has for his family transfers over to his gentle and kind nature when working with our patients. He is bilingual in Spanish and English. Adam’s birthday is on Halloween so come celebrate with him and don’t forget your costume!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="tanisha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Tanisha Blanch</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/tanisha-bio.jpg" alt="">
+                            <p>Hello! My name is Tanisha and I am the newest member of the Dentistry for Kids team. I am a city girl - I graduated from Carl Schurz High School and have lived in Chicago my whole life. I have always worked with children of all ages from 3 to 18. My goal is to one day become a dental hygienist. I am looking forward to getting to know your children! In my spare time I love spending time with my family. Happy Smiles!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="modal fade" id="michael" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Michael Cruz</h4>
+                        </div>
+                        <div class="modal-body team__modal-pic">
+                            <img src="images/bios/michael-bio.jpg" alt="">
+                            <p>Michael is an enthusiastic member of our team. He graduated from Everest College with his dental assisting degree. He continued his education and received his coronal polishing and sealant certificate. Michael is very tall and may seem intimidating but from the moment you meet him you will realize he is just a gentle giant. He enjoys interacting with the kids because it brings out the inner child in him. He has been helping care for his nieces and nephews since they were infants. In his free time he spends time with his family and enjoys basketball and working out. Ask him about his favorite sport - he has so many!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+</div>
+</div>
+
+<section class="footer">
+    <footer class="footer__wrapper center clearfix">
+        <div class="footer__content">
+            <a target="_blank" href="https://www.facebook.com/Dentistry-for-Kids-Ltd-Dr-Furusho-Dr-Kollmann-293517314003627/"><img src="images/facebook_round_blue.svg" alt="facebook link" class="facebook-icon pull-left"></a>
+            <h6 class="footer__text">Copyright © 2016 All Rights Reserved by Tyson Steele Associates. Privacy Policy</h6>
+        </div>
+    </footer>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>window.slick || document.write('<script src="js/vendor/slick.min.js"><\/script>')</script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/functions.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+
+</body>
+</html>
