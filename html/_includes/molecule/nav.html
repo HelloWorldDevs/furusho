@@ -2,13 +2,13 @@
 
     <div class="custom-nav-btn">
         <div class="pull-left">
-            <i class="nav__menu-icon fa fa-bars"></i>
+            <i class="custom-nav__menu-icon fa fa-bars"></i>
         </div>
     </div>
 
-    <ul class="nav nav-pills nav-justified nav--toggle">
-        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New Patient Specials</a></li>
-        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient Reviews</a></li>
+    <ul class="custom-nav nav-pills nav--toggle">
+        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New&nbsp;Patient&nbsp;Specials</a></li>
+        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient&nbsp;Reviews</a></li>
         {% assign sorted = site.pages | sort:"weight" %}
         {% for item in sorted %}
             {% if item.link.text and item.link.text != "Home" %}

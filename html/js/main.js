@@ -58,7 +58,7 @@ $(document).ready(function() {
     $(this).next().removeClass('folded');
   });
 
-  $('.nav__menu-icon').on('click', function() {
+  $('.custom-nav__menu-icon').on('click', function() {
     $('.nav--toggle').toggle();
   });
   

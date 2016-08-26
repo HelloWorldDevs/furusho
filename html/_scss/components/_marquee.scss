@@ -14,6 +14,12 @@
   &__main-text {
     letter-spacing: -0.4px;
     line-height: 67px;
+    @media screen and (max-width: $width--large) {
+      font-size: 42px;
+    }
+    @media screen and (max-width: $width--medium) {
+      font-size: 18px;
+    }
   }
   &__byline {
     font-size: 36px;

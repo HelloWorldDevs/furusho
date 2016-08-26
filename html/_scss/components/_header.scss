@@ -1,7 +1,16 @@
 .header {
+  & a {
+    color: white;
+  }
 
   &__logo {
     text-align: left;
+    @media screen and (max-width: $width--medium) {
+      text-align: center;
+    }
+    & img {
+      max-width: 500px;
+    }
   }
 
   .font-accent-green {
@@ -13,21 +22,55 @@
   }
 
   &__info {
-    text-align: center;
+    text-align: right;
+    @media screen and (max-width: $width--medium) {
+      text-align: center;
+    }
   }
   &__info--bold {
     font-size: 120%;
     font-weight: 600;
   }
-}
-
-@media screen and (min-width: 992px) {
-  .header__info {
-    text-align: right;
+  &__nav {
+    clear: both;
+    background-color: $background-dark;
+    .custom-nav > li > a {
+      font-family: 'Raleway';
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      font-size: 1.0em;
+      @media screen and (max-width: $width--xlarge) {
+        font-size: 0.9em;
+      }
+      @media screen and (max-width: $width--large) {
+        font-size: 0.8em;
+      }
+      @media screen and (max-width: $width--medium) {
+        font-size: 18px;
+      }
+    }
   }
 }
 
-.nav {
+.custom-nav {
+  background-color: #8117B7;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (max-width: ($width--medium + 1) ){
+    display: none;
+  }
+  & li {
+    display: inline-block;
+  }
+  &__menu-icon {
+    color: white;
+    font-size: 2.7em;
+    padding: 5px 20%;
+  }
   li {
     background-color: $background-dark;
   }
@@ -37,7 +80,7 @@
 }
 
 //Bootstrap Overrides
-.nav-pills>li>a {
+.custom-nav>li>a {
   border-radius: 0px;
   height: auto;
   font-family: 'Raleway';
@@ -47,22 +90,22 @@
   font-weight: 500;
 }
 
-.nav-pills>li:hover {
+.custom-nav>li:hover {
   background-color: #512A65;
 }
 
-.nav-pills>li>a:hover {
+.custom-nav>li>a:hover {
   background-color: #512A65;
   color: $accent-font-first ;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .nav-pills>li.active {
+.custom-nav>li.active>a, .custom-nav>li.active>a:hover, .custom-nav>li.active>a:focus, .custom-nav>li.active {
   background-color: #512A65;
 }
 
 //Responsive fixes
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $width--medium) {
   .header {
     width: 100%;
     text-align: center;
@@ -70,5 +113,17 @@
       max-width: 400px;
     }
   }
+}
 
+.custom-nav-btn {
+  display: none;
+}
+
+@media screen and (max-width: $width--medium ) {
+  .custom-nav-btn {
+    display: block;
+  }
+  .nav--toggle {
+    display: none;
+  }
 }
