@@ -5,15 +5,16 @@
 #header,
 #header-wrap,
 #logo img {
-  height: 100px;
+  //height: 100px;
   -webkit-transition: height .4s ease, opacity .3s ease;
   -o-transition: height .4s ease, opacity .3s ease;
   transition: height .4s ease, opacity .3s ease;
 }
 
-#header.sticky-style-2 { height: 161px; }
-
-#header.sticky-style-3 { height: 181px; }
+#header>div:first-child {
+  padding: 20px 0px;
+}
+//#header.sticky-style-2 { height: 161px; }
 
 #header.sticky-style-2 #header-wrap { height: 60px; }
 
