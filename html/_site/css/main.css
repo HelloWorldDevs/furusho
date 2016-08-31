@@ -1077,6 +1077,31 @@ label {
   background-color: #EFEAF1;
 }
 
+.slide-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  color: #FFF;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.marquee__slide .furusho.button {
+  bottom: 40px;
+  position: fixed;
+}
+.marquee__slide {
+  position: relative;
+}
 .slick-dots li {
   margin: 5px;
 }

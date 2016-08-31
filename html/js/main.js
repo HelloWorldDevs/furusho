@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.marquee__slick').slick({
+  $('.marquee__slider').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
