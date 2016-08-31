@@ -8,6 +8,15 @@ $(document).ready(function() {
     autoplaySpeed: 4000,
     adaptiveHeight: true
   });
+  $('.marquee__slick').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 4000,
+    adaptiveHeight: true
+  });
 
   $('.associations').slick({
     dots: true,

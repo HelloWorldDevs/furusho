@@ -64,9 +64,11 @@
     padding: 10px;
   }
   &__scroll-down {
-    position: relative;
-    bottom: 80px;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
     text-align: center;
+    right: 0px;
   }
   &__scroll-down a {
     color: white;
@@ -76,6 +78,16 @@
   &__scroll-down img {
     width: 38px;
   }
+
+}
+
+.slide-container {
+  position: absolute;
+  top: 0;
+}
+
+.marquee__slide.slick-slide {
+  position: relative;
 }
 
 @media screen and (min-width: 1204px) {
