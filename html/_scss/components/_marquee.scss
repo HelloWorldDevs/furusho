@@ -64,11 +64,11 @@
     padding: 10px;
   }
   &__scroll-down {
-    position: absolute;
-    bottom: 40px;
+    position: relative;
     left: 0px;
     text-align: center;
     right: 0px;
+    top: -90px;
   }
   &__scroll-down a {
     color: white;
