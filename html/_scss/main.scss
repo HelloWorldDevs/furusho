@@ -18,8 +18,9 @@
 @import "vendor/_sticky_header.scss";
 
 
-*:focus {
-  outline: none;
+*:focus,
+*:active {
+  outline: none !important;
 }
 
 a {
@@ -81,9 +82,15 @@ nav {
 .pad-bottom {
   padding-bottom: 20px;
 }
+.pad-top {
+  padding-top: 20px;
+}
 .pad-vert {
   padding-bottom: 20px;
   padding-top: 20px;
+}
+.marg-top {
+  margin-top: 40px;
 }
 .section-margins {
   margin: 15px 0px;
