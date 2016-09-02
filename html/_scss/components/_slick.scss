@@ -3,6 +3,9 @@
 .team-additional .slick-dots {
   background-color: $background-second;
 }
+.slick-dots {
+  bottom: -30px;
+}
 
 .slick-dots li {
   margin: 5px;
@@ -13,6 +16,7 @@
   opacity: 0.75;
 }
 
+.associations-slider .slick-dots button:before,
 .team-additional .slick-dots button:before {
   color: #8117B7;
   font-size: 36px;

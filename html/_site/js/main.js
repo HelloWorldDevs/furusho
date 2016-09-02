@@ -72,7 +72,7 @@ $(document).ready(function() {
           autoplaySpeed: 4000
         }
       }
-        ]
+    ]
   });
   $('.reviews__slider').slick({
     dots: false,
