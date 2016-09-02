@@ -25,3 +25,17 @@
 .team-header {
 
 }
+
+.main-bio-pic {
+  @media screen and (max-width: $width--xlarge) {
+  }
+  @media screen and (max-width: $width--large) {
+    margin-top: 70px;
+  }
+  @media screen and (max-width: $width--medium) {
+    margin-top: 0;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
