@@ -3,6 +3,12 @@ body {
   color: #4A4A4A;
 }
 
+h6 {
+  color: #4A4A4A;
+
+}
+
+
 h1,
 h2,
 h3,
@@ -43,6 +49,9 @@ h6 {
   }
   &-accent-blue {
     color: #0D387C;
+  }
+  &-accent-white-shadow {
+    text-shadow: white 0px 0px 15px;
   }
   &-weight-light {
     font-weight: 300;
