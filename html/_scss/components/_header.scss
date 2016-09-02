@@ -63,9 +63,17 @@
   padding: 0 10px;
   @media screen and (max-width: ($width--medium + 1) ){
     display: none;
+    padding-left: 60px;
+    padding-right: 0;
   }
   & li {
     display: inline-block;
+    @media screen and (max-width: ($width--medium + 1) ){
+      display: block;
+      padding: 15px 10px 10px 10px;
+      width: 100%;
+      text-align: center;
+    }
   }
   &__menu-icon {
     color: white;

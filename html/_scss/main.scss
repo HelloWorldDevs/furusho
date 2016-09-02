@@ -26,6 +26,9 @@
 a {
   cursor: pointer;
 }
+a:hover {
+  text-decoration: none;
+}
 
 section {
   background-position: center center;

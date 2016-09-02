@@ -64,8 +64,8 @@
     </div>
 
     <ul class="custom-nav nav-pills nav--toggle">
-        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials">New&nbsp;Patient&nbsp;Specials</a></li>
-        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews">Patient&nbsp;Reviews</a></li>
+        <li><a class="nav__link font-accent-yellow" href="index.html#section-specials"  data-scrollto="#section-specials" data-offset="50">New&nbsp;Patient&nbsp;Specials</a></li>
+        <li><a class="nav__link font-accent-lightgreen" href="index.html#section-reviews" data-scrollto="#section-reviews" data-offset="50">Patient&nbsp;Reviews</a></li>
         
         
             
@@ -112,39 +112,48 @@
 <div class="container">
   <div class="main-container">
 
-    <section class="marquee marquee--custom section-margins">
-            <div class="marquee__wrapper clearfix">
-                <div class="marquee__slick">
-                    <div class="marquee__slide" style="background-image: url('images/tour/tour1.jpg');">
-                        <div class="marquee-patients marquee__slide-wrapper">
-                            <div class="slide--text-center container center">
-                                <h1 class="marquee-patients-content">Scheduling Your First Appointment is Easy!</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marquee__slide" style="background-image: url('images/tour/tour2.jpg');">
-                        <div class="marquee-patients marquee__slide-wrapper">
-                            <div class="slide--text-center container center">
-                                <h1 class="marquee-patients-content">Scheduling Your First Appointment is Easy!</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="marquee__slide" style="background-image: url('images/tour/tour3.jpg');">
-                        <div class="marquee-patients marquee__slide-wrapper">
-                            <div class="slide--text-center container center">
-                                <h1 class="marquee-patients-content">Scheduling Your First Appointment is Easy!</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="smooth-scroll-btn marquee__scroll-down">
-                <a href="" data-href="#section__visit">
-                    <h4 class="scroll__text">Scroll Down</h4>
-                    <img src="images/arrow-down.svg" alt="Down Arrow">
-                </a>
-            </div>
+    <section id="marquee-tour" class="section-margins team-header">
+
+  <div class="marquee__slider__wrapper">
+    <section class="marquee__slider">
+
+      <div class="marquee__slide">
+        <img src="images/tour/tour1.jpg" alt="office picture">
+        <div class="slide-container">
+          <div class=" text-marquee-middle container center">
+            <h1 class="marquee-patients-content">Scheduling Your First<br>Appointment is Easy!</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee__slide">
+        <img src="images/tour/tour2.jpg" alt="office picture">
+        <div class="slide-container">
+          <div class=" text-marquee-middle container center">
+            <h1 class="marquee-patients-content">Scheduling Your First<br>Appointment is Easy!</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee__slide">
+        <img src="images/tour/tour3.jpg" alt="office picture">
+        <div class="slide-container">
+          <div class=" text-marquee-middle container center">
+            <h1 class="marquee-patients-content">Scheduling Your First<br>Appointment is Easy!</h1>
+          </div>
+        </div>
+      </div>
     </section>
+
+  </div>
+
+  <div class="smooth-scroll-btn marquee__scroll-down">
+    <a href="#" data-offset="40" data-scrollto="#section__visit">
+      <h4 class="scroll__text">Scroll Down</h4>
+      <img src="images/arrow-down.svg" alt="Down Arrow">
+    </a>
+  </div>
+</section>
 
     <section class="contact section-margins pad-vert">
     <div class="contact__content container clearfix">
@@ -212,12 +221,12 @@
     <section id="section__visit" class="first-visit background-light-purple section-margins section-padding">
         <div class="first-visit__content clearfix">
             <div class="heading first-visit__heading">
-                <h2>The First Dental Visit</h2>
+                <h1>The First Dental Visit</h1>
             </div>
 
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/kollmann-interaction.jpg" alt="">
+                    <img class="pad-bottom" src="images/kollmann-interaction.jpg" alt="Dr. Kollman">
                 </div>
                 <div class="col-md-6">
                     <p>For some children and parents, the first visit to the dentist can be a stressful situation.
@@ -242,7 +251,7 @@
     <section class="qa clearfix section-margins section-padding background-light-green">
         <div class="qa__wrapper">
             <div class="heading qa__heading">
-                <h2>Parent Questions  & Answers</h2>
+                <h1>Parent Questions  & Answers</h1>
             </div>
         </div>
 
@@ -502,11 +511,11 @@
     <section class="comfort background-light-purple section-margins section-padding">
         <div class="comfort__content clearfix">
             <div class="heading comfort__heading">
-                <h2>Patient Comfort</h2>
+                <h1>Patient Comfort</h1>
             </div>
 
             <div class="col-md-6">
-                <img src="images/patient-comfort.jpg" alt="Smiling young girl">
+                <img class="pad-bottom" src="images/patient-comfort.jpg" alt="Smiling young girl">
             </div>
             <div class="col-md-6">
                 <p>Our office was designed for infants, children and teens. From the arcade games in the waiting room to
