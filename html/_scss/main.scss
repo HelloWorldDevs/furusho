@@ -18,6 +18,9 @@
 @import "vendor/_sticky_header.scss";
 
 
+*:focus {
+  outline: none;
+}
 
 a {
   cursor: pointer;

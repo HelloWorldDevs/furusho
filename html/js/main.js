@@ -18,13 +18,34 @@ $(document).ready(function() {
     adaptiveHeight: true
   });
 
-  $('.associations').slick({
+  $('.associations-slider').slick({
     dots: true,
     infinite: true,
     speed: 300,
-    width: '100%',
-    slidesToShow: 1,
-    centerMode: true
+    autoplay: true,
+    autoplaySpeed: 6000,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          autoplaySpeed: 4000,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
   });
   $('.team-slider').slick({
     dots: true,
@@ -71,6 +92,12 @@ $(document).ready(function() {
     $('.nav--toggle').toggle();
   });
   
+
+
+
+  // Mail Form (Request Appointment)
+  // ===============================
+
   var $form = $('#mail-form, #mail-form2');
   $form.before('<div class="form-error"></div>');
   $form.submit(function(e) {

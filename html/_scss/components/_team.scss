@@ -26,6 +26,13 @@
 
 }
 
+.associations-slide img {
+  max-height: 50px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-bio-pic {
   @media screen and (max-width: $width--xlarge) {
   }
