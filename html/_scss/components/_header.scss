@@ -60,6 +60,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 10px;
   @media screen and (max-width: ($width--medium + 1) ){
     display: none;
   }
@@ -101,6 +102,10 @@
 
 .custom-nav>li.active>a, .custom-nav>li.active>a:hover, .custom-nav>li.active>a:focus, .custom-nav>li.active {
   background-color: #512A65;
+}
+
+.nav__link {
+  color: #FFF;
 }
 
 //Responsive fixes
