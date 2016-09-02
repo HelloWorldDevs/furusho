@@ -101,6 +101,16 @@ h2 {
   }
 }
 
+h4.marquee__quote {
+  @media screen and (max-width: $width--xlarge) {
+    line-height: 32px;
+  }
+  @media screen and (max-width: $width--large) {
+    line-height: 22px;
+    font-size: 16px;
+  }
+}
+
 h6 {
   font-size: 16px;
 }
