@@ -80,6 +80,18 @@
   }
 
 }
+.team-header {
+  height: 608px;
+  @media screen and (max-width: $width--xlarge) {
+    height: 501px;
+  }
+  @media screen and (max-width: $width--large) {
+    height: 384px;
+  }
+  @media screen and (max-width: $width--medium) {
+    height: auto;
+  }
+}
 
 .team-header-wrapper {
   background-position: center center;
