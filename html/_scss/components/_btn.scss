@@ -4,6 +4,8 @@
   &--inverted {
     background: #FFD700;
     color: rgba(80,42,100,0.90);
-    letter-spacing: -0.33px;
+  }
+  &--left.btn {
+    margin-left: 0px;
   }
 }

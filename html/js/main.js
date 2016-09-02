@@ -3,7 +3,7 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 4000,
     adaptiveHeight: true
@@ -12,7 +12,7 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 4000,
     adaptiveHeight: true
