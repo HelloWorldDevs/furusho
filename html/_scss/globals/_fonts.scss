@@ -41,6 +41,9 @@ h6 {
   &-accent-yellow {
     color: #FFD700;
   }
+  &-accent-blue {
+    color: #0D387C;
+  }
   &-weight-light {
     font-weight: 300;
   }
@@ -62,7 +65,19 @@ h1 {
   @media screen and (max-width: $width--medium) {
     font-size: 18px;
   }
+  &.h1-smaller {
+    font-size: 48px;
+    @media screen and (max-width: $width--xlarge) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $width--large) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: $width--medium) {
+    }
+  }
 }
+
 
 h2 {
   font-size: 36px;

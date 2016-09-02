@@ -8,20 +8,39 @@ weight: 4
 ---
 <div class="main-container">
 
-    <section class="marquee section-margins" style="background-image: url('images/frenectomy-slide.jpg');">
-        <div class="marquee--flex">
-            <div class="marquee__wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-8 frenectomy__title">
-                            <h1>Discover how this simple procedure can keep your baby smiling</h1>
-                        </div>
-                    </div>
-                </div>
+    <!--<section class="marquee section-margins" style="background-image: url('images/frenectomy-slide.jpg');">-->
+        <!--<div class="marquee&#45;&#45;flex">-->
+            <!--<div class="marquee__wrapper">-->
+                <!--<div class="container">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-6 col-sm-8 frenectomy__title">-->
+                            <!--<h1>Discover how this simple procedure can keep your baby smiling</h1>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="smooth-scroll-btn marquee__scroll-down">-->
+            <!--<a href="" data-href="#section__frenectomy">-->
+                <!--<h4 class="scroll__text">Scroll Down</h4>-->
+                <!--<img src="images/arrow-down.svg" alt="Down Arrow">-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</section>-->
+
+    <section class="team-header section-margins">
+        <div class="team-header-wrapper hidden-xs" style="background-image: url('images/frenectomy-slide.jpg')">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1 class="font-accent-blue h1-smaller">Discover how this simple procedure can keep your baby smiling</h1>
+                </div>
             </div>
         </div>
-        <div class="smooth-scroll-btn marquee__scroll-down">
+        <div class="hidden-sm hidden-md hidden-lg">
+            <img src="images/infant-mobile.jpg" alt="Baby smiling">
+        </div>
+        <div class="smooth-scroll-btn marquee__scroll-down hidden-xs">
             <a href="" data-href="#section__frenectomy">
                 <h4 class="scroll__text">Scroll Down</h4>
                 <img src="images/arrow-down.svg" alt="Down Arrow">
@@ -31,16 +50,15 @@ weight: 4
 
     {% include organisms/contact.html %}
 
-    <section id="section__frenectomy" class="frenectomy background-light-purple section-margins">
+    <section id="section__frenectomy" class="frenectomy background-light-purple section-margins pad-vert">
         <div class="frenectomy__wrapper container clearfix">
             <div class="heading frenectomy__heading">
-                <h2>Infant Frenectomy</h2>
+                <h1>Infant Frenectomy</h1>
             </div>
 
             <div class="frenectomy__content row">
-                <div class="col-sm-4"><img src="images/frenectomy-photo.jpg" alt="frenectomy">
-                </div>
-                <div class="col-sm-8">
+                <div class="col-md-5 col-sm-4 baby-photo"><img src="images/frenectomy-photo.jpg" alt="frenectomy"></div>
+                <div class="col-md-7 col-sm-8">
                     <h4 class="frenectomy--byline-font">What is a Lip Tie or Tongue Tie?</h4>
                     <p>Well before your baby is born, you are committed to doing everything possible to help him or her
                         grow up happy, strong and healthy. Sometimes, you both need extra help to accomplish this, and
