@@ -81,6 +81,22 @@
 
 }
 
+.team-header-wrapper {
+  background-position: center center;
+  background-size: cover;
+  height: 608px;
+  padding: 0 20px;
+  @media screen and (max-width: $width--xlarge) {
+    height: 501px;
+  }
+  @media screen and (max-width: $width--large) {
+    height: 384px;
+  }
+  @media screen and (max-width: $width--medium) {
+    height: 100%;
+  }
+}
+
 .slide-container {
   position: absolute;
   top: 0;

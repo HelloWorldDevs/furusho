@@ -1,5 +1,90 @@
+body {
+  padding: 0px;
+  color: #4A4A4A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'OpenSans';
+}
+
 .font {
   &--highlight {
     color: #C775F1;
   }
+  &-accent-green {
+    color: #7ED321;
+  }
+
+  &-accent-lightgreen {
+    color: #A5ED57;
+  }
+
+  &-accent-purple {
+    color: $accent-font-second;
+  }
+  &-accent-dark-purple {
+    color: #512A65;
+  }
+  &-accent-white {
+    color: $accent-font-first;
+  }
+
+  &-accent-yellow {
+    color: #FFD700;
+  }
+  &-weight-light {
+    font-weight: 300;
+  }
+  &-weight-bold {
+    font-weight: 700;
+  }
+
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  @media screen and (max-width: $width--xlarge) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: $width--large) {
+    font-size: 37px;
+  }
+  @media screen and (max-width: $width--medium) {
+    font-size: 18px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  @media screen and (max-width: $width--xlarge) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: $width--large) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: $width--medium) {
+    font-size: 27px;
+  }
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+nav a {
+  font-size: 16px;
+}
+
+label {
+  font-weight: 400;
 }
