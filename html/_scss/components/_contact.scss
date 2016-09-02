@@ -58,12 +58,18 @@
     font-size: 40px;
     font-weight: 500;
     margin: 0px;
+    @media screen and (max-width: $width--large) {
+      font-size: 30px;
+    }
   }
   &__phone--small {
     font-size: 32px;
     font-weight: 500;
     margin: 0px;
     margin-bottom: 20px;
+    @media screen and (max-width: $width--large) {
+      font-size: 26px;
+    }
   }
   &__phone--byline {
     font-size: 20px;
@@ -73,6 +79,13 @@
   }
 
 }
+
+.contact-logo {
+  @media screen and (max-width: $width--medium) {
+    max-width: 250px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .contact {
     &--pull-left {

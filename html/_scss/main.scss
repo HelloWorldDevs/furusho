@@ -250,9 +250,10 @@ img {
 }
 
 //Label for Google Street View
-section.marquee.marquee--captioned:after {
+.marquee--captioned:after {
   display: block;
   position: absolute;
+  color: #FFF;
   content: "Image Capture: Nov 2015 ©2016 Google";
   bottom: 0px;
   right: 0px;
