@@ -28,10 +28,18 @@ h6 {
   }
   &-accent-green {
     color: #7ED321;
+    &:hover,
+    &:visited {
+      color: #7ED321 !important;
+    }
   }
 
   &-accent-lightgreen {
     color: #A5ED57;
+    &:hover,
+    &:visited {
+      color: #A5ED57 !important;
+    }
   }
 
   &-accent-purple {
@@ -46,6 +54,10 @@ h6 {
 
   &-accent-yellow {
     color: #FFD700;
+    &:hover,
+    &:visited {
+      color: #FFD700 !important;
+    }
   }
   &-accent-blue {
     color: #0D387C;
