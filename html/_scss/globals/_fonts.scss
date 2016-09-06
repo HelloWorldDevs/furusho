@@ -59,6 +59,34 @@ h6 {
   &-weight-bold {
     font-weight: 700;
   }
+  &-size-huge {
+    font-size: 60px;
+    @media screen and (max-width: $width--xlarge) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: $width--large) {
+      font-size: 37px;
+    }
+    @media screen and (max-width: $width--medium) {
+      font-size: 30px;
+    }
+  }
+
+  &-decoration-dollar:before {
+    content: '$';
+    font-size: 22px;
+    position: relative;
+    bottom: 20px;
+    left: -10px;
+    @media screen and (max-width: $width--large) {
+      font-size: 18px;
+      bottom: 10px;
+      left: -5px;
+    }
+    @media screen and (max-width: $width--medium) {
+      bottom: 5px;
+    }
+  }
 
 }
 
