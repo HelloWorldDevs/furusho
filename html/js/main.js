@@ -1,20 +1,20 @@
 $(document).ready(function() {
   $('#marquee-1 .marquee__slider').slick({
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 8000,
     adaptiveHeight: true
   });
   $('#marquee-tour .marquee__slider').slick({
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 8000,
     adaptiveHeight: true
   });
 
@@ -84,10 +84,10 @@ $(document).ready(function() {
   $('.reviews__slider').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
     autoplay: false,
-    autoplaySpeed: 4000
+    autoplaySpeed: 8000
   });
   
   $('.ui-accordion-header').click(function () {
@@ -104,33 +104,41 @@ $(document).ready(function() {
 
   // Mail Form (Request Appointment)
   // ===============================
+  '#mail-form, #mail-form2'
+  var HelloWorldDevs = function() {};
 
-  var $form = $('#mail-form, #mail-form2');
-  $form.before('<div class="form-error"></div>');
-  $form.submit(function(e) {
-    e.preventDefault();
-    var formData = $form.serialize();
-    var formAction = $form.attr('action');
-    $.ajax({
-      type: 'POST',
-      url: formAction,
-      data: formData,
-      dataType: 'json',
-      encode: true
-    }).done(function (response) {
+  HelloWorldDevs.prototype.mailForm = function (form, success_msg, uid) {
+    var $form = $(form);
+    $form.submit(function(e) {
+      e.preventDefault();
+      var formData = $form.serialize();
+      var formAction = 'http://web-api.tysonsteele.com/v1/webprops/'+uid+'/schedule'
       $('.form-error').remove();
-      $form.replaceWith('Congratulations! Dentistry is a big part of a \
-          healthy life, and we\'re excited to be a part of yours. We will \
-          contact you in the next 2 business days to schedule your \
-          appointment and to answer any questions you may still have. \
-          Thank you!');
-    }).error(function (response) {
-      var $error_list = $('<ul></ul>');
-      $.each(response.responseJSON, function(key, value) {
-        $error_list.append('<li>'+value+'</li>');
+      $.ajax({
+        type: 'POST',
+        url: formAction,
+        data: formData,
+        dataType: 'json',
+        encode: true
+      }).done(function (response) {
+        $form.replaceWith($(success_msg).html());
+      }).error(function (response) {
+        var $error_list = $('<ul>');
+        if(response.responseJSON == undefined) {
+          $error_list.append($('<li>').text('There was a problem with your submission. Please ensure all fields are correctly entered.'));
+        } else {
+          $.each(response.responseJSON, function(key, value) {
+            $error_list.append($('<li>').text(value));
+          });
+        }
+        $form.before('<div class="form-error"></div>');
+        $('.form-error').html($error_list).fadeIn();
       });
-      $('.form-error').html($error_list).fadeIn();
     });
-  });
+  };
+
+  var HWD = new HelloWorldDevs();
+
+  HWD.mailForm('#mail-form, #mail-form2', '#success_msg', '7fb35345-752d-4792-9480-cd3db6674a62');
 
 });
