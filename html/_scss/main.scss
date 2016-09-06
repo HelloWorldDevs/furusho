@@ -162,6 +162,10 @@ img {
   padding: 20px 40px;
   margin: 30px;
   border-radius: 0px;
+  &:hover {
+    color: #FFF;
+    background-color: $primary-font;
+  }
 }
 
 .nav-pills>li+li {
