@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.marquee__slider').slick({
+  $('#marquee-1 .marquee__slider').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -8,15 +8,15 @@ $(document).ready(function() {
     autoplaySpeed: 4000,
     adaptiveHeight: true
   });
-  // $('.marquee__slick').slick({
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 1,
-  //   autoplay: false,
-  //   arrows: false,
-  //   autoplaySpeed: 4000,
-  //   adaptiveHeight: true
-  // });
+  $('#marquee-tour .marquee__slider').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 4000,
+    adaptiveHeight: true
+  });
 
   $('.associations-slider').slick({
     dots: true,
