@@ -59,6 +59,9 @@ h6 {
   &-weight-bold {
     font-weight: 700;
   }
+  &-size-tiny {
+    font-size: 14px;
+  }
   &-size-huge {
     font-size: 60px;
     @media screen and (max-width: $width--xlarge) {
