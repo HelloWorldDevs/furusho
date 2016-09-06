@@ -90,6 +90,9 @@
 }
 
 //Bootstrap Overrides
+.custom-nav>li {
+  height: 60px;
+}
 .custom-nav>li>a {
   border-radius: 0px;
   height: auto;
@@ -111,6 +114,10 @@
 
 .custom-nav>li.active>a, .custom-nav>li.active>a:hover, .custom-nav>li.active>a:focus, .custom-nav>li.active {
   background-color: #512A65;
+  padding: 17px 5px 0px 5px;
+}
+.custom-nav>li.not-active {
+  padding: 17px 5px 0px 5px;
 }
 
 
