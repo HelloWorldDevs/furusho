@@ -95,6 +95,12 @@ nav {
 .pad-top-2x {
   padding-top: 40px;
 }
+.pad-top-3x {
+  padding-top: 60px;
+  @media screen and (max-width: $width--xlarge) {
+    padding-top: 40px;
+  }
+}
 .pad-vert {
   padding-bottom: 20px;
   padding-top: 20px;

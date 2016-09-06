@@ -3,20 +3,20 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 4000,
     adaptiveHeight: true
   });
-  $('.marquee__slick').slick({
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: true,
-    arrows: false,
-    autoplaySpeed: 4000,
-    adaptiveHeight: true
-  });
+  // $('.marquee__slick').slick({
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1,
+  //   autoplay: false,
+  //   arrows: false,
+  //   autoplaySpeed: 4000,
+  //   adaptiveHeight: true
+  // });
 
   $('.associations-slider').slick({
     dots: true,

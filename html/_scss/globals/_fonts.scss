@@ -101,9 +101,15 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 26px;
+}
+
 h4.marquee__quote {
+  font-size: 20px;
   @media screen and (max-width: $width--xlarge) {
-    line-height: 32px;
+    line-height: 30px;
+    font-size: 18px;
   }
   @media screen and (max-width: $width--large) {
     line-height: 22px;
