@@ -22,11 +22,16 @@
 .team-slider .slick-slide .img-container {
   margin: 0 auto;
   display: inline-block;
+  position: relative;
   &:hover:after {
+    font-family: 'FontAwesome';
     content: "\f067";
     position: absolute;
-    top: 40%;
+    top: 35%;
     color: white;
+    font-size: 60px;
+    left: 40%;
+    /* font-weight: 100; */
   }
   &:hover:before {
     content: " ";
