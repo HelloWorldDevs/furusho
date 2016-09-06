@@ -137,8 +137,15 @@ $(document).ready(function() {
     });
   };
 
+  HelloWorldDevs.prototype.noOrphans = function (selectors, exceptions) {
+    $(selectors).not(exceptions).each(function () {
+      $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '&nbsp;$1'));
+    });
+  };
+
   var HWD = new HelloWorldDevs();
 
   HWD.mailForm('#mail-form, #mail-form2', '#success_msg', '7fb35345-752d-4792-9480-cd3db6674a62');
+  HWD.noOrphans('h1,h2,h3,h4,h5,h6,p','');
 
 });
