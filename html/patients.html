@@ -55,12 +55,12 @@ weight: 2
 
                 {% for item in site.data.questions.items %}
 
-                <h3 class="qa__question ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-{{ forLoop.index*2-1 }}"
-                    aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="-1">
+                <h3 class="qa__question ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
+                     tabindex="-1">
                     <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e">
                     </span><i class="qa__icon fa fa-check-square-o"></i> {{ item.question }}</h3>
-                <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom {% if forLoop.first %}ui-accordion-content-active{% else %}folded{% endif %}" id="ui-id-{{ forLoop.index*2 }}"
-                     aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true">
+                <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom {% if forLoop.first %}ui-accordion-content-active{% else %}folded{% endif %}"
+                     role="tabpanel" aria-hidden="true">
 
                     {% for answer in item.answers %}
                         <p class="qa__answer {% if forLoop.last %}nobottommargin{% endif %}">{{ answer }}</p>

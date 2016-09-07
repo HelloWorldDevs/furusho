@@ -12,7 +12,7 @@
     <title>Tysone Steele Associates</title>
     <meta name='keywords' content='Providing Pediatric Dentistry and Orthodontics to Chicago.'/>
     <meta name='description' content='Pediatric Dentists Cissy Furusho, Kirk Kollmann and Marvin Berman offer dentistry for children, kids, and teens in the Chicago area!' />
-    <meta name="author" content="Hello World"/>
+    <meta name="author" content="Hello World Devs"/>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
 
@@ -163,7 +163,7 @@
             </div>
 
             <div class="contact-form__content col-md-10 col-md-offset-1">
-                <form form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify" class="contact-form__form center">
+                <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify" class="contact-form__form center">
                     <p>Yes! Please contact me to schedule an appointment or answer any questions I might still have:</p>
                     <div class="contact_form__row">
                         <label for="name">My name:</label>
@@ -177,7 +177,7 @@
                         <label for="phone">Phone Number:</label>
                         <input type="text" name="phone" id="phone" class="contact_form__input"/>
                     </div>
-                    <button action="submit" class="btn">Request Appointment</button>
+                    <button type="submit" class="btn">Request Appointment</button>
                 </form>
             </div>
         </div>
@@ -204,6 +204,48 @@
     </section>
 </div>
 
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Request an Appointment</h4>
+            </div>
+            <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify">
+                <div class="container center">
+                    <h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">My name:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="name" id="name" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Email:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="email" required name="email" id="email" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <div class="row appointment_input_row form-group">
+                        <div class="col-xs-4">
+                            <label for="name">Phone #:</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" required name="phone" id="phone" class="form-control appointment_form"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg">Request Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script type="text/template" id="success_msg">
     <p>Congratulations! Dentistry is a big part of a healthy life, and we're excited to be a part of yours. We will
