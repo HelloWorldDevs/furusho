@@ -10,12 +10,12 @@
   }
 
   &.marquee__btn1 {
-    margin-top: 100px;
+    margin-top: 200px;
     @media screen and (max-width: $width--xlarge) {
-      margin-top: 70px;
+      margin-top: 130px;
     }
     @media screen and (max-width: $width--large) {
-      margin-top: 20px;
+      margin-top: 60px;
     }
     @media screen and (max-width: $width--medium) {
       display: none;
