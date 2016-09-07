@@ -149,18 +149,18 @@ h1 {
 }
 
 h1.h1-smaller {
-  font-size: 48px;
+  font-size: 46px;
 }
 
 @media screen and (max-width: 1200px) {
   h1.h1-smaller {
-    font-size: 40px;
+    font-size: 37px;
   }
 }
 
 @media screen and (max-width: 992px) {
   h1.h1-smaller {
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 

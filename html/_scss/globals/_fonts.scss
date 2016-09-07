@@ -118,12 +118,12 @@ h1 {
     font-size: 30px;
   }
   &.h1-smaller {
-    font-size: 48px;
+    font-size: 46px;
     @media screen and (max-width: $width--xlarge) {
-      font-size: 40px;
+      font-size: 37px;
     }
     @media screen and (max-width: $width--large) {
-      font-size: 30px;
+      font-size: 27px;
     }
     @media screen and (max-width: $width--medium) {
     }
