@@ -48,7 +48,7 @@ weight: 1
                             <p>Dr. Cissy K. Furusho received her B.S. in biology from the University of Illinois,
                                 Champaign-Urbana and graduated with her D.D.S., her pediatric certificate, and her masters in
                                 oral biology from UIC College of Dentistry. She holds a certificate in Orofacial Myofunctional
-                                Therapy. She is highly involved in the American Association of Women Dentist and is also very
+                                Therapy. She is highly involved in the American Association of Women Dentists and is also very
                                 active as a member in the American Academy of Pediatric Dentistry, the American Dental
                                 Association and the Chicago Dental Society. Dr. Furusho is also a clinical instructor at the
                                 University of Illinois at Chicago, College of Dentistry. She enjoys riding her bicycle and loves
@@ -85,15 +85,15 @@ weight: 1
             <section class="team-additional background-light-purple marg-top">
                 <div class="team-slider">
                     <div class="team-member">
-                        <a href="#" data-toggle="modal" data-target="#adam">
-                            <div class="img-container"><img src="images/bios/adam-bio.jpg" alt="adam"></div>
-                            <h4 class="font-accent-dark-purple font-weight-bold">Adam Ramirez</h4>
-                        </a>
-                    </div>
-                    <div class="team-member">
                         <a href="#" data-toggle="modal" data-target="#berman">
                             <div class="img-container"><img src="images/bios/berman-bio.jpg" alt="berman"></div>
                             <h4 class="font-accent-dark-purple font-weight-bold">Dr. Marvin Berman</h4>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="#" data-toggle="modal" data-target="#marisela">
+                            <div class="img-container"><img src="images/bios/marisela-bio.jpg" alt="marisela"></div>
+                            <h4 class="font-accent-dark-purple font-weight-bold">Marisela Paz</h4>
                         </a>
                     </div>
                     <div class="team-member">
@@ -109,15 +109,15 @@ weight: 1
                         </a>
                     </div>
                     <div class="team-member">
-                        <a href="#" data-toggle="modal" data-target="#letticia">
-                            <div class="img-container"><img src="images/bios/letticia-bio.jpg" alt="letticia"></div>
-                            <h4 class="font-accent-dark-purple font-weight-bold">Letticia Chavez</h4>
+                        <a href="#" data-toggle="modal" data-target="#adam">
+                            <div class="img-container"><img src="images/bios/adam-bio.jpg" alt="adam"></div>
+                            <h4 class="font-accent-dark-purple font-weight-bold">Adam Ramirez</h4>
                         </a>
                     </div>
                     <div class="team-member">
-                        <a href="#" data-toggle="modal" data-target="#marisela">
-                            <div class="img-container"><img src="images/bios/marisela-bio.jpg" alt="marisela"></div>
-                            <h4 class="font-accent-dark-purple font-weight-bold">Marisela Paz</h4>
+                        <a href="#" data-toggle="modal" data-target="#letticia">
+                            <div class="img-container"><img src="images/bios/letticia-bio.jpg" alt="letticia"></div>
+                            <h4 class="font-accent-dark-purple font-weight-bold">Letticia Chavez</h4>
                         </a>
                     </div>
                     <div class="team-member">
@@ -154,8 +154,10 @@ weight: 1
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title">{{ item.name }}</h4>
                         </div>
-                        <div class="modal-body team__modal-pic">
-                            <img src="images/bios/{{ item.modalId }}-bio.jpg" alt="">
+                        <div class="modal-body">
+                            <div class="team__modal-pic">
+                                <img src="images/bios/{{ item.modalId }}-bio.jpg" alt="{{ item.modalId }}">
+                            </div>
                             <p>{{ item.text }}</p>
                         </div>
                     </div>
