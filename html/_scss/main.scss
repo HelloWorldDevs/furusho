@@ -29,6 +29,11 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: inherit;
+}
+a.telephone {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 section {
