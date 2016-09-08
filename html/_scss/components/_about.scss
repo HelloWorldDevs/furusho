@@ -26,6 +26,15 @@
   }
   &__more h3 {
     font-size: 36px;
+    @media screen and (max-width: $width--large) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: $width--medium) {
+      font-size: 27px;
+    }
+    @media screen and (max-width: $width--small) {
+      font-size: 23px;
+    }
     font-weight: 700;
   }
   &__more a {
