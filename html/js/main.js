@@ -5,7 +5,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 6000,
     adaptiveHeight: true
   });
   $('#marquee-tour .marquee__slider').slick({
@@ -14,7 +14,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     autoplay: true,
     arrows: true,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 6000,
     adaptiveHeight: true
   });
 
@@ -86,8 +86,8 @@ $(document).ready(function() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    autoplay: false,
-    autoplaySpeed: 8000
+    autoplay: true,
+    autoplaySpeed: 6000
   });
   
   $('.ui-accordion-header').click(function () {
