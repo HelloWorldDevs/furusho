@@ -42,12 +42,18 @@
 //arrows
 
 .slick-next {
-  right: 20px;
+  right: 3px;
 }
 
 .slick-prev {
-  left: 10px;
+  left: 3px;
   z-index: 1;
+}
+
+.slick-next,
+.slick-prev {
+  height: 30px;
+  width: 30px;
 }
 
 .slick-next:before {
