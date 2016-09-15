@@ -1,7 +1,7 @@
 {
   "contact": {
     "phone-new": "<a href='tel:1-888-540-7885' class='telephone'>(888)&nbsp;540&#8209;7885</a>",
-    "phone-existing": "<a href='1-773-545-007' class='telephone'>(773)&nbsp;545&#8209;0007</a>",
+    "phone-existing": "<a href='tel:1-773-545-007' class='telephone'>(773)&nbsp;545&#8209;0007</a>",
     "address": {
       "line1": "4801 West Peterson, Suite 410",
       "line2": "Chicago, IL 60646"
