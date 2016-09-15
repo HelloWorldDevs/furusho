@@ -169,6 +169,17 @@ h4.marquee__quote {
   }
 }
 
+h4.specials-fix {
+  font-size: 28px;
+  font-weight: 600;
+  @media screen and (max-width: $width--xlarge) {
+    font-size: 23px;
+  }
+  @media screen and (max-width: $width--large) {
+    font-size: 18px;
+  }
+}
+
 h6 {
   font-size: 16px;
 }
