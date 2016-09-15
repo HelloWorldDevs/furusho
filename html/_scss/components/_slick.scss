@@ -4,11 +4,24 @@
   background-color: $background-second;
 }
 .slick-dots {
-  bottom: -30px;
+  bottom: -24px;
 }
+
+#associations-section .slick-dots {
+  bottom: -35px;
+}
+
+#associations-section .slick-dotted.slick-slider {
+  margin-bottom: 50px;
+}
+
+
 
 .slick-dots li {
   margin: 5px;
+  @media (max-width: $width--small) {
+    margin: 2px;
+  }
 }
 
 .slick-dots li.slick-active button:before {
@@ -20,6 +33,9 @@
 .team-additional .slick-dots button:before {
   color: #8117B7;
   font-size: 18px;
+  @media (max-width: $width--small) {
+    font-size: 12px;
+  }
 }
 
 

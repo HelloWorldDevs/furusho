@@ -59,19 +59,19 @@ weight: 5
             </div>
 
             <div class="contact-form__content col-md-10 col-md-offset-1">
-                <form id="mail-form" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify" class="contact-form__form center">
+                <form id="mail-form-2" action="//web-api.tysonsteele.com/v1/webprops/KEY/notify" class="contact-form__form center">
                     <p>Yes! Please contact me to schedule an appointment or answer any questions I might still have:</p>
                     <div class="contact_form__row">
                         <label for="name">My name:</label>
-                        <input type="text" name="name" id="name" class="contact_form__input"/>
+                        <input type="text" required name="name" id="name" class="contact_form__input"/>
                     </div>
                     <div class="contact_form__row">
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" class="contact_form__input"/>
+                        <input type="email" required name="email" id="email" class="contact_form__input"/>
                     </div>
                     <div class="contact_form__row">
                         <label for="phone">Phone Number:</label>
-                        <input type="text" name="phone" id="phone" class="contact_form__input"/>
+                        <input type="phone" required name="phone" id="phone" class="contact_form__input"/>
                     </div>
                     <button type="submit" class="btn">Request Appointment</button>
                 </form>

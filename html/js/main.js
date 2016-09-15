@@ -104,7 +104,6 @@ $(document).ready(function() {
 
   // Mail Form (Request Appointment)
   // ===============================
-  '#mail-form, #mail-form2'
   var HelloWorldDevs = function() {};
 
   HelloWorldDevs.prototype.mailForm = function (form, success_msg, uid) {
@@ -112,7 +111,7 @@ $(document).ready(function() {
     $form.submit(function(e) {
       e.preventDefault();
       var formData = $form.serialize();
-      var formAction = 'http://web-api.tysonsteele.com/v1/webprops/'+uid+'/schedule'
+      var formAction = 'http://web-api.tysonsteele.com/v1/webprops/'+uid+'/schedule';
       $('.form-error').remove();
       $.ajax({
         type: 'POST',
@@ -145,7 +144,8 @@ $(document).ready(function() {
 
   var HWD = new HelloWorldDevs();
 
-  HWD.mailForm('#mail-form, #mail-form2', '#success_msg', '7fb35345-752d-4792-9480-cd3db6674a62');
+  HWD.mailForm('#mail-form', '#success_msg', '7fb35345-752d-4792-9480-cd3db6674a62');
+  HWD.mailForm('#mail-form-2', '#success_msg', '7fb35345-752d-4792-9480-cd3db6674a62');
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,p','');
 
 });
